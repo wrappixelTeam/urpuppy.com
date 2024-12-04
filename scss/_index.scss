@@ -44,18 +44,18 @@
 
 
 .irs--round .irs-bar {
-    background-color: #00c2c0;
+    background-color: $primary;
 }
 
 .irs--round .irs-handle {
-    background-color: #00c2c0;
-    border-color: #00c2c0;
-    box-shadow: 0px 0px 0px 5px rgba(0, 194, 192, 0.2);
+    background-color: $primary;
+    border-color: $primary;
+    box-shadow: 0px 0px 0px 5px rgb(232 131 37 / 20%);
 }
 
 .irs--round .irs-handle.state_hover,
 .irs--round .irs-handle:hover {
-    background-color: #00c2c0;
+    background-color: $primary;
 }
 
 .irs--round .irs-handle {
@@ -68,7 +68,7 @@
 .irs--round .irs-to,
 .irs--round .irs-single {
     background-color: transparent;
-    color: #666;
+    color: $dark;
 }
 
 .irs--round .irs-from:before,

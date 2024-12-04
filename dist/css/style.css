@@ -16782,18 +16782,18 @@ textarea.form-control-lg {
 }
 
 .irs--round .irs-bar {
-  background-color: #00c2c0;
+  background-color: #E88325;
 }
 
 .irs--round .irs-handle {
-  background-color: #00c2c0;
-  border-color: #00c2c0;
-  box-shadow: 0px 0px 0px 5px rgba(0, 194, 192, 0.2);
+  background-color: #E88325;
+  border-color: #E88325;
+  box-shadow: 0px 0px 0px 5px rgba(232, 131, 37, 0.2);
 }
 
 .irs--round .irs-handle.state_hover,
 .irs--round .irs-handle:hover {
-  background-color: #00c2c0;
+  background-color: #E88325;
 }
 
 .irs--round .irs-handle {
@@ -16806,7 +16806,7 @@ textarea.form-control-lg {
 .irs--round .irs-to,
 .irs--round .irs-single {
   background-color: transparent;
-  color: #666;
+  color: #08314E;
 }
 
 .irs--round .irs-from:before,
