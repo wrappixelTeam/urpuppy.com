@@ -16,6 +16,31 @@
     }
 }
 
+.featured-breeds-slider {
+    .owl-carousel {
+        z-index: inherit;
+    }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    /* For Firefox */
+    appearance: textfield;
+    /* For other browsers */
+}
+
+/* Optional: Remove the default border or add custom styles */
+input[type="number"] {
+    border: none;
+    outline: none;
+}
+
 .grid-filter {
     background-color: $white;
     padding: 13px 16px;
@@ -30,7 +55,7 @@
     .age,
     .price-range,
     .state {
-        padding: 0 18px;
+        padding: 0 14px;
     }
 }
 
@@ -40,8 +65,6 @@
         background-image: none;
     }
 }
-
-
 
 .irs--round .irs-bar {
     background-color: $primary;
@@ -78,15 +101,6 @@
 .irs--round .irs-max {
     display: none;
 }
-
-
-
-
-
-
-
-
-
 
 .featured-breeds-img {
     position: relative;

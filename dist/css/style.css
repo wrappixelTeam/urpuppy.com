@@ -6753,7 +6753,7 @@ textarea.form-control-lg {
   --bs-offcanvas-padding-x: 1rem;
   --bs-offcanvas-padding-y: 1rem;
   --bs-offcanvas-color: var(--bs-body-color);
-  --bs-offcanvas-bg: #08314E;
+  --bs-offcanvas-bg: #000;
   --bs-offcanvas-border-width: var(--bs-border-width);
   --bs-offcanvas-border-color: var(--bs-border-color-translucent);
   --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
@@ -16716,7 +16716,7 @@ textarea.form-control-lg {
   left: 0;
   width: 100%;
   padding: 18px 0;
-  background-color: rgba(8, 49, 78, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .main-header .navbar .navbar-collapse .navbar-nav {
   gap: 24px;
@@ -16759,6 +16759,29 @@ textarea.form-control-lg {
   background: linear-gradient(180deg, #000000 -14.84%, rgba(0, 0, 0, 0.65) 59%, #000000 107.59%);
 }
 
+.featured-breeds-slider .owl-carousel {
+  z-index: inherit;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  /* For Firefox */
+  appearance: textfield;
+  /* For other browsers */
+}
+
+/* Optional: Remove the default border or add custom styles */
+input[type=number] {
+  border: none;
+  outline: none;
+}
+
 .grid-filter {
   background-color: #fff;
   padding: 13px 16px;
@@ -16773,7 +16796,7 @@ textarea.form-control-lg {
 .grid-filter .age,
 .grid-filter .price-range,
 .grid-filter .state {
-  padding: 0 18px;
+  padding: 0 14px;
 }
 
 .sex .form-select,
