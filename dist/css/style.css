@@ -16736,11 +16736,18 @@ textarea.form-control-lg {
 .main-header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
   color: #E88325;
 }
+.main-header .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+  color: #E88325 !important;
+}
 .main-header .navbar .navbar-collapse .navbar-nav .nav-item-line {
   background: rgba(255, 255, 255, 0.2);
   display: block;
   width: 1px;
   height: 24px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: #E88325 !important;
 }
 
 .hero-section {

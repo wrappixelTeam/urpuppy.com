@@ -37,6 +37,9 @@
                         &:hover {
                             color: $primary;
                         }
+                        &.active{
+                            color: $primary !important;
+                        }
                     }
                 }
 
@@ -50,4 +53,14 @@
         }
     }
 
+}
+
+.navbar-nav{
+    .nav-item{
+        .nav-link{
+            &.active{
+                color: $primary !important;
+            }
+        }
+    }
 }
