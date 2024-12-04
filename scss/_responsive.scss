@@ -1,0 +1,25 @@
+@include media-breakpoint-down(xl) {
+    .hero-section {
+        padding: 265px 0 165px;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .main-header {
+        padding: 20px 0;
+    }
+    .hero-section {
+        padding: 205px 0 105px;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .top-picks-slider #sync2 .owl-item, .top-picks-slider #sync2 .item {
+        width: 64px !important;
+        height: 64px !important;
+        margin-right: 12px;
+    }
+    .hero-section {
+        padding: 144px 0 64px;
+    }
+}

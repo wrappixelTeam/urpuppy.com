@@ -1,0 +1,155 @@
+// scss-docs-start gray-color-variables
+$white: #fff !default;
+$gray-100: rgba(8, 49, 78, 0.6) !default; //
+$gray-200: rgba(8, 49, 78, 0.8) !default; //
+$gray-300: #08314E !default; //
+$black: #000 !default;
+// scss-docs-end gray-color-variables
+
+// Color
+$blue: #E88325 !default;
+$green: #34C759 !default;
+$red: #FF3B30 !default;
+$text-muted: $gray-100 !default;
+
+// Main Colors
+$primary: $blue !default;
+$secondary: #08314E !default;
+$info: #007AFF !default;
+$success: $green !default;
+$danger: $red !default;
+$light: rgba(8, 49, 78, 0.6);
+$muted: $gray-100 !default;
+$dark: $gray-300 !default;
+$extralight: #F3F5F6;
+
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "dark": $dark,
+  "muted": $muted,
+  "light": $light,
+  "info": $info,
+  "danger": $danger,
+  "success": $success,
+  "extralight": $extralight,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  ) !default;
+// scss-docs-end theme-colors-map
+
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1392px,
+  ) !default;
+// scss-docs-end container-max-widths
+
+
+// Spacer
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: 12px,
+  7: 28px,
+  8: 40px,
+  9: 64px,
+  10: 80px,               
+  11: 145px,
+  12: 215px,
+) !default; 
+
+// Font Sizes
+$font-sizes: (
+  1: 12px,         
+  2: 14px,
+  3: 16px,
+  4: 18px,
+  5: 20px,
+  6: 18px,
+  7: 20px,
+  8: 24px,
+  9: 32px,
+  10: 40px,
+  11: 72px,
+) !default;
+$font-size-base: 1rem !default;
+
+// Font Family
+$font-family-sans-serif: "Work Sans", sans-serif !default;
+
+// Theme Text Contrast
+$min-contrast-ratio: 1.7 !default;
+//$enable-shadows: true !default;
+
+// Global
+$text-muted: $muted !default;
+$grid-gutter-width: 24px !default;
+
+// Margins
+$enable-negative-margins: true !default;
+$enable-shadows: true !default;
+
+// Heading
+$headings-color: $dark !default;
+
+// Border Radius
+$border-radius: 8px !default;
+$border-radius-sm: 12px !default;
+$border-radius-lg: 24px !default;
+
+// Theme body bg & text color
+$body-bg: $white !default;
+$body-color: rgba(8, 49, 78, 0.8) !default;
+
+// Border Color
+$border-color: rgba(8, 49, 78, 0.1) !default;
+
+$link-hover-color: $primary !default;
+
+// Buttons
+$btn-padding-y: 9px !default;
+$btn-padding-x: 24px !default;
+$btn-font-weight: 600 !default;
+$btn-border-radius: 100px !default;
+$btn-box-shadow: unset !default;
+$btn-font-size: 16px !default;
+$btn-color: $white !default; 
+$btn-link-hover-color: $white;
+$btn-link-color: $white;
+
+// Card
+$card-bg: $white !default;
+$card-title-color: $dark !default;
+$card-subtitle-color: $text-muted !default;
+$card-spacer-y: 24px !default;
+$card-spacer-x: 24px !default;
+$card-border-width: 0px !default;
+$card-border-color: transparent !default;
+$card-border-radius: 12px !default;
+
+// Badges
+$tooltip-bg: var(--bs-primary);
+
+// Badges
+$badge-font-size: 14px !default;
+$badge-font-weight: 500 !default;
+$badge-color: $white;
+$badge-padding-y: 8px !default;
+$badge-padding-x: 12px !default;
+$badge-border-radius: 30px;
+
+
+// Offcanvas
+$offcanvas-horizontal-width:  300px !default;
+$offcanvas-bg-color: $secondary;

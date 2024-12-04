@@ -1,0 +1,231 @@
+// Hero
+.hero-section {
+    padding: 315px 0 215px;
+    background-image: url(../../assets/images/banner-img/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #000000 -14.84%, rgba(0, 0, 0, 0.65) 59%, #000000 107.59%);
+    }
+}
+
+.grid-filter {
+    background-color: $white;
+    padding: 13px 16px;
+    border-radius: 100px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid $border-color;
+
+    .breed,
+    .sex,
+    .breed,
+    .age,
+    .price-range,
+    .state {
+        padding: 0 18px;
+    }
+}
+
+.sex,
+.age {
+    .form-select {
+        background-image: none;
+    }
+}
+
+
+
+.irs--round .irs-bar {
+    background-color: #00c2c0;
+}
+
+.irs--round .irs-handle {
+    background-color: #00c2c0;
+    border-color: #00c2c0;
+    box-shadow: 0px 0px 0px 5px rgba(0, 194, 192, 0.2);
+}
+
+.irs--round .irs-handle.state_hover,
+.irs--round .irs-handle:hover {
+    background-color: #00c2c0;
+}
+
+.irs--round .irs-handle {
+    width: 16px;
+    height: 16px;
+    top: 29px;
+}
+
+.irs--round .irs-from,
+.irs--round .irs-to,
+.irs--round .irs-single {
+    background-color: transparent;
+    color: #666;
+}
+
+.irs--round .irs-from:before,
+.irs--round .irs-to:before,
+.irs--round .irs-single:before,
+.irs--round .irs-min,
+.irs--round .irs-max {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.featured-breeds-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.featured-breeds-img:hover img {
+    transform: scale(1.2);
+}
+
+.featured-breeds-img::before {
+    content: '';
+    padding-top: 100%;
+    display: block;
+}
+
+.featured-breeds-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    will-change: transform;
+    transition: all .3s;
+}
+
+.puppy-spotlight-item {
+    background-color: $white;
+    border: 1px solid $border-color;
+}
+
+
+.top-picks-slider {
+    #sync1 {
+        .owl-item {
+            overflow: hidden;
+            position: relative;
+            border-radius: var(--bs-border-radius-sm);
+
+            .item {
+                transition: all 0.3s;
+
+                &::before {
+                    content: "";
+                    padding-top: 79%;
+                    display: block;
+                }
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    will-change: transform;
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+
+    #sync2 {
+        .owl-stage {
+            display: flex;
+            align-items: center;
+        }
+
+        .owl-item {
+            border: 3px solid transparent;
+            cursor: pointer;
+
+            &.current {
+                border-color: $primary;
+            }
+        }
+
+        .owl-item,
+        .item {
+            width: 90px !important;
+            height: 90px !important;
+            flex-shrink: 0;
+            overflow: hidden;
+            border-radius: var(--bs-border-radius-sm);
+        }
+    }
+}
+
+.bringing-through-puppies-blog {
+    transition: all 0.3s;
+
+    &::before {
+        content: "";
+        padding-top: 111%;
+        display: block;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    &:hover>img {
+        transform: scale(1.2);
+    }
+
+    &>img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        will-change: transform;
+        transition: all 0.3s;
+    }
+}
+
+.footer-memu {
+    li {
+        a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: all 0.3s;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}

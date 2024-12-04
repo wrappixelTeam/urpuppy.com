@@ -1,0 +1,53 @@
+.main-header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    padding: 28px 0;
+    transition: all 0.5s ease;
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 18px 0;
+        background-color: rgba($secondary, 0.9); 
+    }
+
+    .navbar {
+        .navbar-collapse {
+            .navbar-nav {
+                gap: 24px;
+
+                .nav-item {
+                    .nav-link {
+                        font-size: 16px;
+                        color: $white;
+                        font-weight: 600;
+                        line-height: 100%;
+                        display: flex;
+                        align-items: center;
+                        padding: 0;
+                        position: relative;
+                        transition: all 0.3s ease;
+                        font-family: "Work Sans", sans-serif;
+
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+
+                .nav-item-line {
+                    background: rgba(255, 255, 255, 0.2);
+                    display: block;
+                    width: 1px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+
+}
