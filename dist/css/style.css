@@ -16751,7 +16751,7 @@ textarea.form-control-lg {
 }
 
 .hero-section {
-  padding: 315px 0 215px;
+  padding: 200px 0 150px;
   background-image: url(../../assets/images/banner-img/banner-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -17007,7 +17007,7 @@ input[type=number] {
 }
 
 .hero-section-inner-slider .owl-carousel .owl-item .item {
-  min-height: 600px;
+  min-height: 482px;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17020,7 +17020,7 @@ input[type=number] {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #000000 -14.84%, rgba(0, 0, 0, 0.65) 59%, #000000 107.59%);
+  background: linear-gradient(180deg, #000000 3.34%, rgba(0, 0, 0, 0.1) 59%, #000000 93.78%);
 }
 .hero-section-inner-slider .owl-carousel .owl-dots {
   position: absolute;
@@ -17050,20 +17050,12 @@ input[type=number] {
   border-radius: var(--bs-border-radius);
 }
 
-@media (max-width: 1199.98px) {
-  .hero-section {
-    padding: 265px 0 165px;
-  }
-  .hero-section-inner-slider .owl-carousel .owl-item .item {
-    min-height: 500px;
-  }
-}
 @media (max-width: 991.98px) {
   .main-header {
     padding: 20px 0;
   }
   .hero-section {
-    padding: 205px 0 105px;
+    padding: 200px 0 100px;
   }
   .hero-section-inner-slider .owl-carousel .owl-dots {
     position: absolute;
@@ -17081,7 +17073,7 @@ input[type=number] {
     margin-right: 12px;
   }
   .hero-section {
-    padding: 144px 0 64px;
+    padding: 130px 0 50px;
   }
   .hero-section-inner-slider .owl-carousel .owl-item .item {
     min-height: 450px;
