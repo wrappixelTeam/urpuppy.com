@@ -10,6 +10,10 @@ $(function () {
 		new bootstrap.Tooltip(tooltipTriggerEl);
 	});
 
+
+	// =================================
+	// Sticky
+	// =================================
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 50) {
 			$('header').addClass("sticky");
@@ -20,6 +24,9 @@ $(function () {
 	});
 
 
+	// =================================
+	// Slider
+	// =================================
 	$('.featured-breeds-slider .owl-carousel').owlCarousel({
 		loop: true,
 		margin: 24,
@@ -45,13 +52,18 @@ $(function () {
 		}
 	})
 
-	// Aos
+
+	// =================================
+	// AOS
+	// =================================
 	AOS.init({
 		once: true,
 	});
 
 
-
+	// =================================
+	// Slider
+	// =================================
 	var sync1 = $("#sync1");
 	var sync2 = $("#sync2");
 	var slidesPerPage = 4;
@@ -132,6 +144,10 @@ $(function () {
 	});
 
 
+
+	// =================================
+	// Range Slider
+	// =================================
 	var $range = $(".js-range-slider"),
 		$from = $(".from"),
 		$to = $(".to"),
@@ -186,5 +202,17 @@ $(function () {
 		updateRange();
 	});
 
+
+	// =================================
+	// Slider
+	// =================================
+	$('.hero-section-inner-slider .owl-carousel').owlCarousel({
+		loop:true,
+		margin:0,
+		items: 1,
+		dots: true,
+		nav:false,
+		autoplay: true,
+	})
 
 });

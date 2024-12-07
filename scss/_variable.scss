@@ -149,7 +149,26 @@ $badge-padding-y: 8px !default;
 $badge-padding-x: 12px !default;
 $badge-border-radius: 30px;
 
+$nav-pills-border-radius:           8px;
+$nav-pills-link-active-color:       $white;
+$nav-pills-link-active-bg:          $primary;
 
 // Offcanvas
 $offcanvas-horizontal-width:  300px !default;
 $offcanvas-bg-color: $black;
+
+// pagination
+$pagination-border-radius: 8px;
+$pagination-font-size:              16px;
+$pagination-color:                  rgba(8, 49, 78, 0.6);
+$pagination-active-color:           $white;
+$pagination-active-bg:              $dark;
+$pagination-active-border-color:    $dark;
+$pagination-hover-color:            $dark;
+$pagination-hover-bg:               $white;
+$pagination-hover-border-color:     $dark;
+$pagination-disabled-color:         rgba(8, 49, 78, 0.4);
+$pagination-disabled-bg:            transparent;
+$pagination-focus-color:            $white;
+$pagination-focus-bg:               $dark;
+$pagination-focus-box-shadow:       none;

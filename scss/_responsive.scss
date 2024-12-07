@@ -2,6 +2,9 @@
     .hero-section {
         padding: 265px 0 165px;
     }
+    .hero-section-inner-slider .owl-carousel .owl-item .item {
+        min-height: 500px;
+    }
 }
 
 @include media-breakpoint-down(lg) {
@@ -10,6 +13,14 @@
     }
     .hero-section {
         padding: 205px 0 105px;
+    }
+    .hero-section-inner-slider .owl-carousel .owl-dots {
+        position: absolute;
+        bottom: 30px;
+        right: inherit;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
     }
 }
 
@@ -21,5 +32,12 @@
     }
     .hero-section {
         padding: 144px 0 64px;
+    }
+    .hero-section-inner-slider .owl-carousel .owl-item .item {
+        min-height: 450px;
+    }
+    .pagination .page-item .page-link {
+        width: 40px;
+        height: 40px;
     }
 }
