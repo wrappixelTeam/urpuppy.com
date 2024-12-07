@@ -3705,9 +3705,9 @@ textarea.form-control-lg {
   --bs-btn-color: #fff;
   --bs-btn-bg: transparent;
   --bs-btn-border-color: transparent;
-  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-color: #E88325;
   --bs-btn-hover-border-color: transparent;
-  --bs-btn-active-color: #fff;
+  --bs-btn-active-color: #E88325;
   --bs-btn-active-border-color: transparent;
   --bs-btn-disabled-color: #6c757d;
   --bs-btn-disabled-border-color: transparent;
@@ -3810,8 +3810,8 @@ textarea.form-control-lg {
   --bs-dropdown-bg: var(--bs-body-bg);
   --bs-dropdown-border-color: var(--bs-border-color-translucent);
   --bs-dropdown-border-radius: var(--bs-border-radius);
-  --bs-dropdown-border-width: var(--bs-border-width);
-  --bs-dropdown-inner-border-radius: calc(var(--bs-border-radius) - var(--bs-border-width));
+  --bs-dropdown-border-width: 0;
+  --bs-dropdown-inner-border-radius: calc(var(--bs-border-radius) - 0);
   --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
   --bs-dropdown-divider-margin-y: 0.5rem;
   --bs-dropdown-box-shadow: var(--bs-box-shadow);
@@ -16926,6 +16926,17 @@ input[type=number] {
   border-radius: var(--bs-border-radius-sm);
 }
 
+.trusted-breeders-img, .puppy-spotlight-img {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.trusted-breeders-img img, .puppy-spotlight-img img {
+  transition: all 0.3s;
+}
+.trusted-breeders-img:hover > img, .puppy-spotlight-img:hover > img {
+  transform: scale(1.2);
+}
+
 .bringing-through-puppies-blog {
   transition: all 0.3s;
 }
@@ -17108,6 +17119,11 @@ img {
   margin-bottom: 24px;
 }
 
+.round-35 {
+  width: 35px;
+  height: 35px;
+}
+
 .round-40 {
   width: 40px;
   height: 40px;
@@ -17116,4 +17132,16 @@ img {
 .round-48 {
   width: 48px;
   height: 48px;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.btn-outline-primary:hover svg path {
+  stroke: #fff;
+}
+
+.btn-outline-white:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }

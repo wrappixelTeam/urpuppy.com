@@ -127,6 +127,7 @@ $btn-font-size: 16px !default;
 $btn-color: $white !default; 
 $btn-link-hover-color: $white;
 $btn-link-color: $white;
+$btn-link-hover-color: $primary;
 
 // Card
 $card-bg: $white !default;
@@ -172,3 +173,6 @@ $pagination-disabled-bg:            transparent;
 $pagination-focus-color:            $white;
 $pagination-focus-bg:               $dark;
 $pagination-focus-box-shadow:       none;
+
+// dropdown
+$dropdown-border-width: 0;

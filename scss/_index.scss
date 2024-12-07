@@ -196,6 +196,21 @@ input[type="number"] {
     }
 }
 
+.trusted-breeders-img, .puppy-spotlight-img{
+    transition: all 0.3s;
+    cursor: pointer;
+
+    img {
+        transition: all 0.3s;
+    }
+
+    &:hover {
+        & > img {
+            transform: scale(1.2);
+        }
+    }
+}
+
 .bringing-through-puppies-blog {
     transition: all 0.3s;
 

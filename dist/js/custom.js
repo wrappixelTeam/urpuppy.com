@@ -212,7 +212,7 @@ $(function () {
 		items: 1,
 		dots: true,
 		nav:false,
-		autoplay: true,
+		// autoplay: true,
 	})
 
 });

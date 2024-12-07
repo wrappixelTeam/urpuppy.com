@@ -46,7 +46,7 @@
               <a class="nav-link" href="breeds.html">Breeds</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Breeders</a>
+              <a class="nav-link" href="breeders.html">Breeders</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">+ List Ur Puppy</a>
@@ -62,7 +62,7 @@
             </a>
             <a class="btn btn-white bg-white text-dark" href="#">Login</a>
             <a class="btn btn-primary d-flex align-items-center gap-2" href="#"><img
-                src="../assets/images/svgs/icon-user.svg" alt=""> Register</a>
+                src="../assets/images/svgs/icon-user.svg" alt=""> Sign Up</a>
           </div>
         </div>
       </nav>
@@ -85,7 +85,7 @@
             <a class="nav-link text-white" href="breeds.html">Breeds</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">Breeders</a>
+            <a class="nav-link text-white" href="breeders.html">Breeders</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">+ List Ur Puppy</a>
@@ -94,7 +94,7 @@
         <div class="d-flex align-items-center flex-column gap-3 mt-4">
           <a class="btn btn-white bg-white text-dark w-100" href="#">Login</a>
           <a class="btn btn-primary d-flex align-items-center justify-content-center gap-2 w-100" href="#"><img
-              src="../assets/images/svgs/icon-user.svg" alt=""> Register</a>
+              src="../assets/images/svgs/icon-user.svg" alt=""> Sign Up</a>
         </div>
       </div>
     </div>
@@ -185,7 +185,7 @@
                   <div>
                     <h6 class="font-work-sans mb-0">State</h6>
                     <input class="form-control p-0 shadow-none border-0 fs-2" list="datalistOptions2"
-                      id="exampleDataList" placeholder="e.g. (New york)">
+                      id="exampleDataList" placeholder="e.g. (New York)">
                     <datalist id="datalistOptions2">
                       <option value="San Francisco">
                       <option value="New York">
@@ -289,7 +289,7 @@
                   <div>
                     <h6 class="font-work-sans mb-0">State</h6>
                     <input class="form-control p-0 shadow-none border-0 fs-2" list="datalistOptionsthree"
-                      id="exampleDataListthree" placeholder="e.g. (New york)">
+                      id="exampleDataListthree" placeholder="e.g. (New York)">
                     <datalist id="datalistOptionsthree">
                       <option value="San Francisco">
                       <option value="New York">
@@ -405,7 +405,7 @@
           <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
             <div class="puppy-spotlight-item rounded-1 overflow-hidden" data-aos="fade-up" data-aos-delay="100"
               data-aos-duration="1000">
-              <div class="puppy-spotlight-img position-relative">
+              <div class="puppy-spotlight-img position-relative overflow-hidden">
                 <img src="../assets/images/puppy-spotlight/puppy-spotlight-img-1.jpg" alt="" class="w-100">
                 <div
                   class="d-flex align-items-center justify-content-between position-absolute top-0 start-0 w-100 p-3 pb-0">
@@ -460,11 +460,10 @@
           <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
             <div class="puppy-spotlight-item rounded-1 overflow-hidden" data-aos="fade-up" data-aos-delay="200"
               data-aos-duration="1000">
-              <div class="puppy-spotlight-img position-relative">
+              <div class="puppy-spotlight-img position-relative overflow-hidden">
                 <img src="../assets/images/puppy-spotlight/puppy-spotlight-img-2.jpg" alt="" class="w-100">
                 <div
-                  class="d-flex align-items-center justify-content-between position-absolute top-0 start-0 w-100 p-3 pb-0">
-                  <span class="badge text-bg-info">80% OFF</span>
+                  class="d-flex align-items-center justify-content-end position-absolute top-0 start-0 w-100 p-3 pb-0">
                   <a href="#" class="bg-white d-flex align-items-center justify-content-center round-40 rounded-circle">
                     <img src="../assets/images/svgs/icon-heart-red.svg" alt="">
                   </a>
@@ -520,11 +519,10 @@
           <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
             <div class="puppy-spotlight-item rounded-1 overflow-hidden" data-aos="fade-up" data-aos-delay="400"
               data-aos-duration="1000">
-              <div class="puppy-spotlight-img position-relative">
+              <div class="puppy-spotlight-img position-relative overflow-hidden">
                 <img src="../assets/images/puppy-spotlight/puppy-spotlight-img-3.jpg" alt="" class="w-100">
                 <div
-                  class="d-flex align-items-center justify-content-between position-absolute top-0 start-0 w-100 p-3 pb-0">
-                  <span class="badge text-bg-info">80% OFF</span>
+                  class="d-flex align-items-center justify-content-end position-absolute top-0 start-0 w-100 p-3 pb-0">
                   <a href="#" data-bs-toggle="tooltip" data-bs-title="Add To Favourite"
                     class="bg-white d-flex align-items-center justify-content-center round-40 rounded-circle">
                     <img src="../assets/images/svgs/icon-heart.svg" alt="">
@@ -699,34 +697,68 @@
             <div class="card position-relative overflow-hidden" data-aos="fade-up" data-aos-delay="300"
               data-aos-duration="1000">
               <div class="row">
-                <div class="col-md-4 d-flex align-items-lg-stretch">
-                  <div class="trusted-breeders-img w-100">
+                <div class="col-xl-4 d-flex align-items-lg-stretch">
+                  <div class="trusted-breeders-img position-relative overflow-hidden w-100">
                     <img class="w-100 h-100 object-fit-cover"
                       src="../assets/images/trusted-breeders/trusted-breeders-img-1.jpg" alt="">
                   </div>
                 </div>
-                <div class="col-md-8 d-flex align-items-lg-stretch">
+                <div class="col-xl-8 d-flex align-items-lg-stretch">
                   <div
-                    class="trusted-breeders-details card-body ps-md-0 pe-4 d-flex align-items-start justify-content-between gap-3">
+                    class="trusted-breeders-details card-body ps-xl-0 pe-4 d-flex align-items-start justify-content-between gap-3">
                     <div>
-                      <h6 class="fs-5 font-work-sans mb-6">Golden Paws Breeders</h6>
+                      <a href="#">
+                        <h6 class="btn-link fs-5 font-work-sans mb-6">Golden Paws Breeders</h6>
+                      </a>
                       <div class="d-flex align-items-center gap-6 mb-6">
                         <img src="../assets/images/svgs/icon-paws-dark.svg" alt="" width="24" height="24">
                         <p class="mb-0">Golden Retriever</p>
                       </div>
                       <div class="d-flex align-items-center gap-6 mb-6">
                         <img src="../assets/images/svgs/icon-map-pin.svg" alt="" width="24" height="24">
-                        <p class="mb-0">123 Maple Lane, Springfield, IL, USA</p>
+                        <p class="mb-0 flex-xl-shrink-0">123 Maple Lane, Springfield, IL, USA</p>
                       </div>
                       <div class="d-flex align-items-center gap-6">
                         <img src="../assets/images/svgs/icon-user-dark.svg" alt="" width="24" height="24">
                         <p class="mb-0">Arlene McCoy</p>
                       </div>
                     </div>
-                    <a href="#" data-bs-toggle="tooltip" data-bs-title="Share"
-                      class="bg-white border d-flex align-items-center justify-content-center round-40 rounded-circle flex-shrink-0">
-                      <img src="../assets/images/svgs/icon-share.svg" alt="">
-                    </a>
+                    <div class="d-flex align-items-center gap-2">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-title="Add To Favourite"
+                        class="bg-white border d-flex align-items-center justify-content-center round-40 rounded-circle flex-shrink-0">
+                        <img src="../assets/images/svgs/icon-heart.svg" alt="">
+                      </a>
+                      <div class="dropdown">
+                        <button type="button"
+                          class="btn btn-secondary p-0 shadow-none bg-white border d-flex align-items-center justify-content-center round-40 rounded-circle flex-shrink-0"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/svgs/icon-share.svg" alt="">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end bg-primary social-icon px-6"
+                          style="min-width: auto;">
+                          <div class="d-flex align-items-center justify-content-center gap-2">
+                            <li>
+                              <a href="#"
+                                class="dropdown-item p-0 bg-white bg-opacity-25 d-flex align-items-center justify-content-center round-35 rounded-circle">
+                                <img src="../assets/images/svgs/icon-twitter.svg" alt="" width="16" height="16">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="dropdown-item p-0 bg-white bg-opacity-25 d-flex align-items-center justify-content-center round-35 rounded-circle">
+                                <img src="../assets/images/svgs/icon-facebook.svg" alt="" width="16" height="16">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="dropdown-item p-0 bg-white bg-opacity-25 d-flex align-items-center justify-content-center round-35 rounded-circle">
+                                <img src="../assets/images/svgs/icon-instagram.svg" alt="" width="16" height="16">
+                              </a>
+                            </li>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -736,34 +768,68 @@
             <div class="card position-relative overflow-hidden" data-aos="fade-up" data-aos-delay="400"
               data-aos-duration="1000">
               <div class="row">
-                <div class="col-md-4 d-flex align-items-lg-stretch">
-                  <div class="trusted-breeders-img w-100">
+                <div class="col-xl-4 d-flex align-items-lg-stretch">
+                  <div class="trusted-breeders-img position-relative overflow-hidden w-100">
                     <img class="w-100 h-100 object-fit-cover"
                       src="../assets/images/trusted-breeders/trusted-breeders-img-2.jpg" alt="">
                   </div>
                 </div>
-                <div class="col-md-8 d-flex align-items-lg-stretch">
+                <div class="col-xl-8 d-flex align-items-lg-stretch">
                   <div
-                    class="trusted-breeders-details card-body ps-md-0 pe-4 d-flex align-items-start justify-content-between gap-3">
+                    class="trusted-breeders-details card-body ps-xl-0 pe-4 d-flex align-items-start justify-content-between gap-3">
                     <div>
-                      <h6 class="fs-5 font-work-sans mb-6">Corgi Companions</h6>
+                      <a href="#">
+                        <h6 class="btn-link fs-5 font-work-sans mb-6">Corgi Companions</h6>
+                      </a>
                       <div class="d-flex align-items-center gap-6 mb-6">
                         <img src="../assets/images/svgs/icon-paws-dark.svg" alt="" width="24" height="24">
                         <p class="mb-0">Pembroke Welsh Corgi</p>
                       </div>
                       <div class="d-flex align-items-center gap-6 mb-6">
                         <img src="../assets/images/svgs/icon-map-pin.svg" alt="" width="24" height="24">
-                        <p class="mb-0">456 Oak Avenue, Dallas, TX, USA</p>
+                        <p class="mb-0 flex-xl-shrink-0">456 Oak Avenue, Dallas, TX, USA</p>
                       </div>
                       <div class="d-flex align-items-center gap-6">
                         <img src="../assets/images/svgs/icon-user-dark.svg" alt="" width="24" height="24">
                         <p class="mb-0">Andrew Peroramas</p>
                       </div>
                     </div>
-                    <a href="#" data-bs-toggle="tooltip" data-bs-title="Share"
-                      class="bg-white border d-flex align-items-center justify-content-center round-40 rounded-circle flex-shrink-0">
-                      <img src="../assets/images/svgs/icon-share.svg" alt="">
-                    </a>
+                    <div class="d-flex align-items-center gap-2">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-title="Add To Favourite"
+                        class="bg-white border d-flex align-items-center justify-content-center round-40 rounded-circle flex-shrink-0">
+                        <img src="../assets/images/svgs/icon-heart.svg" alt="">
+                      </a>
+                      <div class="dropdown">
+                        <button type="button"
+                          class="btn btn-secondary p-0 shadow-none bg-white border d-flex align-items-center justify-content-center round-40 rounded-circle flex-shrink-0"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/svgs/icon-share.svg" alt="">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end bg-primary social-icon px-6"
+                          style="min-width: auto;">
+                          <div class="d-flex align-items-center justify-content-center gap-2">
+                            <li>
+                              <a href="#"
+                                class="dropdown-item p-0 bg-white bg-opacity-25 d-flex align-items-center justify-content-center round-35 rounded-circle">
+                                <img src="../assets/images/svgs/icon-twitter.svg" alt="" width="16" height="16">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="dropdown-item p-0 bg-white bg-opacity-25 d-flex align-items-center justify-content-center round-35 rounded-circle">
+                                <img src="../assets/images/svgs/icon-facebook.svg" alt="" width="16" height="16">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="dropdown-item p-0 bg-white bg-opacity-25 d-flex align-items-center justify-content-center round-35 rounded-circle">
+                                <img src="../assets/images/svgs/icon-instagram.svg" alt="" width="16" height="16">
+                              </a>
+                            </li>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -773,34 +839,68 @@
             <div class="card position-relative overflow-hidden" data-aos="fade-up" data-aos-delay="500"
               data-aos-duration="1000">
               <div class="row">
-                <div class="col-md-4 d-flex align-items-lg-stretch">
-                  <div class="trusted-breeders-img w-100">
+                <div class="col-xl-4 d-flex align-items-lg-stretch">
+                  <div class="trusted-breeders-img position-relative overflow-hidden w-100">
                     <img class="w-100 h-100 object-fit-cover"
                       src="../assets/images/trusted-breeders/trusted-breeders-img-3.jpg" alt="">
                   </div>
                 </div>
-                <div class="col-md-8 d-flex align-items-lg-stretch">
+                <div class="col-xl-8 d-flex align-items-lg-stretch">
                   <div
-                    class="trusted-breeders-details card-body ps-md-0 pe-4 d-flex align-items-start justify-content-between gap-3">
+                    class="trusted-breeders-details card-body ps-xl-0 pe-4 d-flex align-items-start justify-content-between gap-3">
                     <div>
-                      <h6 class="fs-5 font-work-sans mb-6">Majestic Huskies</h6>
+                      <a href="#">
+                        <h6 class="btn-link fs-5 font-work-sans mb-6">Majestic Huskies</h6>
+                      </a>
                       <div class="d-flex align-items-center gap-6 mb-6">
                         <img src="../assets/images/svgs/icon-paws-dark.svg" alt="" width="24" height="24">
                         <p class="mb-0">Siberian Husky</p>
                       </div>
                       <div class="d-flex align-items-center gap-6 mb-6">
                         <img src="../assets/images/svgs/icon-map-pin.svg" alt="" width="24" height="24">
-                        <p class="mb-0">789 Pine Street, Anchorage, AK, USA</p>
+                        <p class="mb-0 flex-xl-shrink-0">789 Pine Street, Anchorage, AK, USA</p>
                       </div>
                       <div class="d-flex align-items-center gap-6">
                         <img src="../assets/images/svgs/icon-user-dark.svg" alt="" width="24" height="24">
                         <p class="mb-0">Mark Turner</p>
                       </div>
                     </div>
-                    <a href="#" data-bs-toggle="tooltip" data-bs-title="Share"
-                      class="bg-white border d-flex align-items-center justify-content-center round-40 rounded-circle flex-shrink-0">
-                      <img src="../assets/images/svgs/icon-share.svg" alt="">
-                    </a>
+                    <div class="d-flex align-items-center gap-2">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-title="Add To Favourite"
+                        class="bg-white border d-flex align-items-center justify-content-center round-40 rounded-circle flex-shrink-0">
+                        <img src="../assets/images/svgs/icon-heart.svg" alt="">
+                      </a>
+                      <div class="dropdown">
+                        <button type="button"
+                          class="btn btn-secondary p-0 shadow-none bg-white border d-flex align-items-center justify-content-center round-40 rounded-circle flex-shrink-0"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/svgs/icon-share.svg" alt="">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end bg-primary social-icon px-6"
+                          style="min-width: auto;">
+                          <div class="d-flex align-items-center justify-content-center gap-2">
+                            <li>
+                              <a href="#"
+                                class="dropdown-item p-0 bg-white bg-opacity-25 d-flex align-items-center justify-content-center round-35 rounded-circle">
+                                <img src="../assets/images/svgs/icon-twitter.svg" alt="" width="16" height="16">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="dropdown-item p-0 bg-white bg-opacity-25 d-flex align-items-center justify-content-center round-35 rounded-circle">
+                                <img src="../assets/images/svgs/icon-facebook.svg" alt="" width="16" height="16">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="dropdown-item p-0 bg-white bg-opacity-25 d-flex align-items-center justify-content-center round-35 rounded-circle">
+                                <img src="../assets/images/svgs/icon-instagram.svg" alt="" width="16" height="16">
+                              </a>
+                            </li>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -810,34 +910,68 @@
             <div class="card position-relative overflow-hidden" data-aos="fade-up" data-aos-delay="600"
               data-aos-duration="1000">
               <div class="row">
-                <div class="col-md-4 d-flex align-items-lg-stretch">
-                  <div class="trusted-breeders-img w-100">
+                <div class="col-xl-4 d-flex align-items-lg-stretch">
+                  <div class="trusted-breeders-img position-relative overflow-hidden w-100">
                     <img class="w-100 h-100 object-fit-cover"
                       src="../assets/images/trusted-breeders/trusted-breeders-img-4.jpg" alt="">
                   </div>
                 </div>
-                <div class="col-md-8 d-flex align-items-lg-stretch">
+                <div class="col-xl-8 d-flex align-items-lg-stretch">
                   <div
-                    class="trusted-breeders-details card-body ps-md-0 pe-4 d-flex align-items-start justify-content-between gap-3">
+                    class="trusted-breeders-details card-body ps-xl-0 pe-4 d-flex align-items-start justify-content-between gap-3">
                     <div>
-                      <h6 class="fs-5 font-work-sans mb-6">Frenchie Friends</h6>
+                      <a href="#">
+                        <h6 class="btn-link fs-5 font-work-sans mb-6">Frenchie Friends</h6>
+                      </a>
                       <div class="d-flex align-items-center gap-6 mb-6">
                         <img src="../assets/images/svgs/icon-paws-dark.svg" alt="" width="24" height="24">
                         <p class="mb-0">Golden Retriever</p>
                       </div>
                       <div class="d-flex align-items-center gap-6 mb-6">
                         <img src="../assets/images/svgs/icon-map-pin.svg" alt="" width="24" height="24">
-                        <p class="mb-0">321 Elm Road, Los Angeles, CA, USA</p>
+                        <p class="mb-0 flex-xl-shrink-0">321 Elm Road, Los Angeles, CA, USA</p>
                       </div>
                       <div class="d-flex align-items-center gap-6">
                         <img src="../assets/images/svgs/icon-user-dark.svg" alt="" width="24" height="24">
                         <p class="mb-0">Emma Brown</p>
                       </div>
                     </div>
-                    <a href="#" data-bs-toggle="tooltip" data-bs-title="Share"
-                      class="bg-white border d-flex align-items-center justify-content-center round-40 rounded-circle flex-shrink-0">
-                      <img src="../assets/images/svgs/icon-share.svg" alt="">
-                    </a>
+                    <div class="d-flex align-items-center gap-2">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-title="Add To Favourite"
+                        class="bg-white border d-flex align-items-center justify-content-center round-40 rounded-circle flex-shrink-0">
+                        <img src="../assets/images/svgs/icon-heart.svg" alt="">
+                      </a>
+                      <div class="dropdown">
+                        <button type="button"
+                          class="btn btn-secondary p-0 shadow-none bg-white border d-flex align-items-center justify-content-center round-40 rounded-circle flex-shrink-0"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="../assets/images/svgs/icon-share.svg" alt="">
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end bg-primary social-icon px-6"
+                          style="min-width: auto;">
+                          <div class="d-flex align-items-center justify-content-center gap-2">
+                            <li>
+                              <a href="#"
+                                class="dropdown-item p-0 bg-white bg-opacity-25 d-flex align-items-center justify-content-center round-35 rounded-circle">
+                                <img src="../assets/images/svgs/icon-twitter.svg" alt="" width="16" height="16">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="dropdown-item p-0 bg-white bg-opacity-25 d-flex align-items-center justify-content-center round-35 rounded-circle">
+                                <img src="../assets/images/svgs/icon-facebook.svg" alt="" width="16" height="16">
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#"
+                                class="dropdown-item p-0 bg-white bg-opacity-25 d-flex align-items-center justify-content-center round-35 rounded-circle">
+                                <img src="../assets/images/svgs/icon-instagram.svg" alt="" width="16" height="16">
+                              </a>
+                            </li>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -860,7 +994,7 @@
           <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
             <div class="puppy-spotlight-item rounded-1 overflow-hidden" data-aos="fade-up" data-aos-delay="300"
               data-aos-duration="1000">
-              <div class="puppy-spotlight-img position-relative">
+              <div class="puppy-spotlight-img position-relative overflow-hidden">
                 <img src="../assets/images/new-arrivals/new-arrivals-img-1.jpg" alt="" class="w-100">
                 <div
                   class="d-flex align-items-center justify-content-between position-absolute top-0 start-0 w-100 p-3 pb-0">
@@ -921,11 +1055,10 @@
           <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
             <div class="puppy-spotlight-item rounded-1 overflow-hidden" data-aos="fade-up" data-aos-delay="500"
               data-aos-duration="1000">
-              <div class="puppy-spotlight-img position-relative">
+              <div class="puppy-spotlight-img position-relative overflow-hidden">
                 <img src="../assets/images/new-arrivals/new-arrivals-img-2.jpg" alt="" class="w-100">
                 <div
-                  class="d-flex align-items-center justify-content-between position-absolute top-0 start-0 w-100 p-3 pb-0">
-                  <span class="badge text-bg-success">NEW</span>
+                  class="d-flex align-items-center justify-content-end position-absolute top-0 start-0 w-100 p-3 pb-0">
                   <a href="#" class="bg-white d-flex align-items-center justify-content-center round-40 rounded-circle">
                     <img src="../assets/images/svgs/icon-heart-red.svg" alt="">
                   </a>
@@ -975,11 +1108,10 @@
           <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
             <div class="puppy-spotlight-item rounded-1 overflow-hidden" data-aos="fade-up" data-aos-delay="600"
               data-aos-duration="1000">
-              <div class="puppy-spotlight-img position-relative">
+              <div class="puppy-spotlight-img position-relative overflow-hidden">
                 <img src="../assets/images/new-arrivals/new-arrivals-img-3.jpg" alt="" class="w-100">
                 <div
-                  class="d-flex align-items-center justify-content-between position-absolute top-0 start-0 w-100 p-3 pb-0">
-                  <span class="badge text-bg-success">NEW</span>
+                  class="d-flex align-items-center justify-content-end position-absolute top-0 start-0 w-100 p-3 pb-0">
                   <a href="#" data-bs-toggle="tooltip" data-bs-title="Add To Favourite"
                     class="bg-white d-flex align-items-center justify-content-center round-40 rounded-circle">
                     <img src="../assets/images/svgs/icon-heart.svg" alt="">

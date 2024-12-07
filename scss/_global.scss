@@ -26,6 +26,11 @@ img {
   margin-bottom: 24px;
 }
 
+.round-35 {
+  width: 35px;
+  height: 35px;
+}
+
 .round-40 {
   width: 40px;
   height: 40px;
@@ -34,4 +39,24 @@ img {
 .round-48 {
   width: 48px;
   height: 48px;
+}
+
+.btn-link{
+  text-decoration: none;
+}
+
+.btn-outline-primary{
+  &:hover{
+    svg{
+      path{
+        stroke: $white;
+      }
+    }
+  }
+}
+
+.btn-outline-white{
+  &:hover{
+    background-color: rgba(255 255 255 / 20%);
+  }
 }
