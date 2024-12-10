@@ -176,3 +176,15 @@ $pagination-focus-box-shadow:       none;
 
 // dropdown
 $dropdown-border-width: 0;
+
+// Input
+$input-border-radius: 8px !default;
+$input-border-color: 1px solid rgba(8, 49, 78, 0.1) !default;
+$input-bg: rgba(8, 49, 78, 0.05) !default;
+$input-color: rgba(8, 49, 78, 0.6) !default;
+$input-padding-y: 8px;
+$input-padding-x: 16px;
+$form-check-input-border: 1.25px solid $border-color;
+$input-placeholder-color: rgba(8, 49, 78, 0.6) !default;
+$input-focus-border-color: $primary;
+$input-focus-box-shadow: inherit;

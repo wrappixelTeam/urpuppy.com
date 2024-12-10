@@ -212,7 +212,30 @@ $(function () {
 		items: 1,
 		dots: true,
 		nav:false,
-		// autoplay: true,
+		autoplay: true,
+	})
+
+
+	// =================================
+	// Slider
+	// =================================
+	$('.andrews-reviews-sloder .owl-carousel').owlCarousel({
+		loop: true,
+		margin: 16,
+		dots: true,
+		autoplay: true,
+		responsive: {
+			0: {
+				items: 1,
+				margin: 10,
+			},
+			768: {
+				items: 2
+			},
+			992: {
+				items: 2
+			}
+		}
 	})
 
 });
