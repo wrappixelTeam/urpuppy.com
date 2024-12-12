@@ -178,15 +178,41 @@ $pagination-focus-box-shadow:       none;
 $dropdown-border-width: 0;
 
 // Input
-$input-border-radius: 8px !default;
-$input-border-color: 1px solid rgba(8, 49, 78, 0.1) !default;
-$input-bg: rgba(8, 49, 78, 0.05) !default;
-$input-color: rgba(8, 49, 78, 0.6) !default;
+$input-border-radius: 100px !default;
+$input-border-color: rgba(8, 49, 78, 0.2) !default;
+$input-border-width: 1px;
+$input-box-shadow: inherit;
+$input-color: $dark !default;
 $input-padding-y: 8px;
 $input-padding-x: 16px;
-$form-select-color: rgba(8, 49, 78, 0.6) !default;
+$form-select-color: $dark !default;
 $form-check-input-border: 1.25px solid $border-color;
-$input-placeholder-color: rgba(8, 49, 78, 0.6) !default;
+$input-placeholder-color: $dark !default;
 $input-plaintext-color: $dark !default;
 $input-focus-border-color: $primary;
 $input-focus-box-shadow: inherit;
+$form-label-font-size:                  16px;
+$form-label-font-weight:                500;
+$form-label-color:                      $dark;
+
+// breadcrumb
+$breadcrumb-font-size:              14px;
+$breadcrumb-active-color:           rgba(8, 49, 78, 0.6);
+$breadcrumb-item-padding-x:         12px;
+$breadcrumb-divider: url("../../assets/images/svgs/icon-chev-right.svg");
+
+
+$accordion-color:                         $dark;
+$accordion-border-width:                  1px;
+$accordion-border-color:                  rgba(8, 49, 78, 0.1);
+$accordion-border-radius:                 12px;
+$accordion-icon-width: 1.5rem;
+$accordion-button-color:                 $dark;
+$accordion-button-padding-y:              18px;
+$accordion-button-padding-x:              16px;
+$accordion-button-active-bg:              $white;
+$accordion-button-active-color:           $dark;
+$accordion-button-focus-border-color:     inherit;
+$accordion-button-focus-box-shadow:       inherit;
+$accordion-button-icon:         url("../../assets/images/svgs/icon-chev-down.svg");
+$accordion-button-active-icon:  url("../../assets/images/svgs/icon-chev-down.svg");

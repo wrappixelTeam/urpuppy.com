@@ -467,7 +467,8 @@ input[type="number"] {
 
 .breeders-detail-img,
 .breeders-insight,
-.gallery {
+.gallery,
+.information-img {
     transition: all 0.3s;
     cursor: pointer;
 
@@ -481,3 +482,86 @@ input[type="number"] {
         }
     }
 }
+
+
+// --------------------------------
+// ----- Information Css ------
+// --------------------------------
+
+
+.information-header{
+    position: relative;
+    background-color: rgba(4, 23, 37, 1);
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+    line-height: normal;
+}
+
+.accordion{
+    .accordion-item{
+        margin-bottom: 20px;
+        overflow: hidden;
+        border-radius: 12px;
+        border: 1px solid rgba(8, 49, 78, 0.1) !important;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+        
+    }
+}
+
+
+
+// --------------------------------
+// ----- Login Css ------
+// --------------------------------
+
+.login-bg{
+    background-color: rgba(0, 122, 255, 0.05);
+
+    .card{
+        max-width: 1140px;
+        margin: 0 auto;
+        width: 100%;
+        filter: drop-shadow(0px 8px 24px rgba(149, 157, 165, 0.2));
+
+        .login-info{
+            max-width: 392px;
+            margin: 0 auto;
+        }
+
+        .login-right-bg{
+            position: relative;
+            background: linear-gradient(212.95deg, #75B7FF -22.49%, #298FFF 96.67%);
+
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -20%;
+                right: -20%;
+                height: 100%;
+                background-image: url(../../assets/images/shape/login-shape.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: right;
+            }
+
+            .login-right-card{
+                max-width: 360px;
+                width: 100%;
+            }
+        }
+
+        .signup-right-bg{
+            background: linear-gradient(212.95deg, #92E2A6 -22.49%, #55D375 96.67%);
+
+            &::before{
+                background-image: url(../../assets/images/shape/login-shape-2.png);
+            }
+        }
+    }
+}
+

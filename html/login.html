@@ -17,13 +17,99 @@
 
 
   <div
-    class="page-wrapper position-relative overflow-hidden min-vh-100 d-flex align-items-center justify-content-center">
-    <div class="card auth-login mx-2 mx-md-0 mb-0 w-100 border">
-      <div class="card-body">
-        <a href="index.html" class="text-nowrap logo-img d-block my-4 text-center w-100">
-          <img src="../assets/images/logos/logo-primary.svg" alt="" />
-        </a>
-        <h2 class="text-center mb-4">Let's get you signed in</h2>
+    class="page-wrapper login-bg position-relative overflow-hidden min-vh-100 d-flex align-items-center justify-content-center">
+    <div class="card">
+      <div class="card-body p-0">
+        <div class="row">
+          <div class="col-lg-7 order-last order-lg-first">
+            <div class="login-info d-flex flex-column justify-content-center h-100 py-7 py-lg-0 px-3 ps-lg-0">
+              <h2>Let's Login</h2>
+              <p class="mb-4 pb-2">Explore the best dog breeds! Log in now
+                to discover more.</p>
+              <form>
+                <div class="mb-3 pb-1">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3 pb-1">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="d-flex align-items-center justify-content-between mb-4 pb-2">
+                  <div class="form-check">
+                    <input class="form-check-input primary" type="checkbox" value="" id="flexCheckChecked">
+                    <label class="form-check-label text-dark fs-3" for="flexCheckChecked">
+                      Remember me
+                    </label>
+                  </div>
+                  <a class="text-dark fs-3 fw-semibold text-decoration-underline" href="#">Forgot
+                    Password?</a>
+                </div>
+                <a href="index.html" class="btn btn-primary w-100 mb-3">Login</a>
+                <div class="d-flex align-items-center">
+                  <p class="fs-4 mb-0">I don’t have an account?</p>
+                  <a class="text-dark fw-semibold text-decoration-underline ms-2" href="sign-up.html">Create Account</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-5 order-first order-lg-last">
+            <div
+              class="login-right-bg position-relative overflow-hidden h-100 d-flex align-items-center justify-content-center p-4 pt-10 py-lg-10">
+              <div class="p-4 pb-0 position-absolute top-0 end-0">
+                <a href="index.html"><img src="../assets/images/logos/logo-white.svg" alt=""></a>
+              </div>
+              <div class="card login-right-card mb-0">
+                <div class="card-body">
+                  <div class="puppy-spotlight-item rounded-1 overflow-hidden">
+                    <a href="breeds-detail.html" class="puppy-spotlight-img position-relative overflow-hidden d-block">
+                      <img src="../assets/images/puppy-spotlight/puppy-spotlight-img-1.jpg" alt="" class="w-100">
+                    </a>
+                    <div class="puppy-spotlight-details">
+                      <div class="p-3">
+                        <p class="fs-2 mb-1 text-uppercase fw-medium">Golden Retriever</p>
+                        <h6 class="fs-6 font-work-sans">Max</h6>
+                        <div class="row">
+                          <div class="col-6">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                              <img src="../assets/images/svgs/icon-map-pin.svg" alt="" width="20" height="20">
+                              <p class="mb-0">Dallas, TX</p>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                              <img src="../assets/images/svgs/icon-calendar.svg" alt="" width="20" height="20">
+                              <p class="mb-0">8 Weeks</p>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                              <img src="../assets/images/svgs/icon-male.svg" alt="" width="20" height="20">
+                              <p class="mb-0">Male</p>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                              <img src="../assets/images/svgs/icon-eye.svg" alt="" width="20" height="20">
+                              <p class="mb-0">4 Views</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="p-3 border-top d-flex align-items-center justify-content-between">
+                        <h6 class="fs-5 font-work-sans">$1,200</h6>
+                        <a class="btn btn-primary d-flex align-items-center gap-2" href="breeds-detail.html">
+                          <img src="../assets/images/svgs/icon-paws.svg" alt="">
+                          View more
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

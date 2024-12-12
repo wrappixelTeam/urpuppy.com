@@ -14,14 +14,386 @@
 </head>
 
 <body>
+  <!------------------------------------>
+  <!----------- Header Start ----------->
+  <!------------------------------------>
+  <header class="main-header information-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-xl py-0">
+        <div class="logo">
+          <a class="navbar-brand py-0 me-0" href="index.html"><img src="../assets/images/logos/logo.svg" alt="" /></a>
+        </div>
+        <div class="d-xl-none d-flex align-items-center gap-3">
+          <a class="position-relative me-1 d-xl-none" href="#">
+            <img src="../assets/images/svgs/icon-heart-white.svg" alt="">
+            <span class="position-absolute fs-1 p-1 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              9+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </a>
+          <a class="d-inline-block d-xl-none nav-toggler text-decoration-none fs-9 text-white"
+            data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample">
+            <i class="ti ti-menu-2"></i>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse justify-content-between" id="menu-scroll">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item nav-item-line ms-4"></li>
+            <li class="nav-item">
+              <a class="nav-link" href="puppies-for-sale.html">Puppies for Sale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="breeds.html">Breeds</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="breeders.html">Breeders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">+ List Ur Puppy</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center gap-6">
+            <a class="position-relative me-1" href="my-favourite-puppies.html">
+              <img src="../assets/images/svgs/icon-heart-white.svg" alt="">
+              <span class="position-absolute fs-1 p-1 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                9+
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </a>
+            <a class="btn btn-white bg-white text-dark" href="login.html">Login</a>
+            <a class="btn btn-primary d-flex align-items-center gap-2" href="sign-up.html"><img
+                src="../assets/images/svgs/icon-user.svg" alt=""> Sign Up</a>
+          </div>
+        </div>
+      </nav>
+    </div>
 
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <div class="logo">
+          <a class="navbar-brand py-0 me-0" href="index.html"><img src="../assets/images/logos/logo.svg" alt="" /></a>
+        </div>
+        <button type="button" class="btn-close shadow-none text-reset ms-auto btn-close-white"
+          data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body pt-0">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="puppies-for-sale.html">Puppies for Sale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="breeds.html">Breeds</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="breeders.html">Breeders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">+ List Ur Puppy</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center flex-column gap-3 mt-4">
+          <a class="btn btn-white bg-white text-dark w-100" href="login.html">Login</a>
+          <a class="btn btn-primary d-flex align-items-center justify-content-center gap-2 w-100"
+            href="sign-up.html"><img src="../assets/images/svgs/icon-user.svg" alt=""> Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!---------------------------------->
+  <!----------- Header End ----------->
+  <!---------------------------------->
 
-  <div
-    class="page-wrapper position-relative overflow-hidden min-vh-100 d-flex align-items-center justify-content-center">
-    <div class="card auth-login mx-2 mx-md-0 mb-0 w-100 border">
-      <div class="card-body text-center">
-        <h1 class="fs-11">404</h1>
-        <h2 class="text-center mb-4">Page Not Found</h2>
+  <div class="page-wrapper position-relative overflow-hidden">
+
+    <section class="information pt-4 pb-9">
+      <div class="container">
+        <nav style="--bs-breadcrumb-divider: url(../../assets/images/svgs/icon-chev-right.svg);"
+          aria-label="breadcrumb">
+          <ol class="breadcrumb align-items-center mb-4">
+            <li class="breadcrumb-item fw-semibold d-flex align-items-center"><a
+                class="text-dark d-flex align-items-center" href="index.html"><img
+                  src="../assets/images/svgs/icon-home.svg" alt="" width="16" height="16"></a></li>
+            <li class="breadcrumb-item fw-semibold d-flex align-items-center"><a class="text-dark"
+                href="breeds.html">Breeds</a></li>
+            <li class="breadcrumb-item fw-semibold d-flex align-items-center active" aria-current="page">Charlie</li>
+          </ol>
+        </nav>
+        <div class="card border">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="information-img position-relative overflow-hidden rounded-1 mb-4 mb-lg-0">
+                  <img src="../assets/images/top-picks/top-picks-slider-2.jpg" alt="" class="w-100 h-100">
+                </div>
+              </div>
+              <div class="col-lg-7">
+                <div class="information-details ms-xl-4">
+                  <h2 class="fs-10 mb-4">Charlie</h2>
+                  <div class="d-xl-flex align-items-center gap-3 mb-4">
+                    <a href="#"
+                      class="btn btn-outline-primary d-flex align-items-center justify-content-center gap-2 mb-3 mb-xl-0"><svg
+                        width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1.3335 3.83334V7.04918C1.3335 7.49668 1.511 7.92584 1.82766 8.24251L8.591 15.0058C8.7477 15.1626 8.93374 15.2869 9.13849 15.3717C9.34325 15.4565 9.5627 15.5002 9.78433 15.5002C10.006 15.5002 10.2254 15.4565 10.4302 15.3717C10.6349 15.2869 10.821 15.1626 10.9777 15.0058L15.006 10.9775C15.1627 10.8208 15.287 10.6348 15.3719 10.43C15.4567 10.2253 15.5003 10.0058 15.5003 9.78418C15.5003 9.56255 15.4567 9.34309 15.3719 9.13834C15.287 8.93359 15.1627 8.74755 15.006 8.59084L8.24183 1.82751C7.92553 1.51126 7.49661 1.33352 7.04933 1.33334H3.8335C3.17045 1.33334 2.53457 1.59674 2.06573 2.06558C1.59689 2.53442 1.3335 3.1703 1.3335 3.83334Z"
+                          stroke="#E88325" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>View Charlie Puppies For Sale
+                    </a>
+                    <a class="btn btn-outline-extralight border btn-white text-dark d-flex align-items-center justify-content-center gap-2"
+                      href="#">
+                      <img class="w-auto" src="../assets/images/svgs/icon-paws-dark.svg" alt="" width="15" height="15">
+                      View Charlie Breeders</a>
+                  </div>
+
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fs-5 fw-medium" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                          aria-controls="flush-collapseOne">
+                          History
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body pt-0">
+                          <p class="mb-0">
+                            The Affenpinscher is a toy breed that originated in Germany, with a history dating back to
+                            the 1600s. The name "Affenpinscher" means "Monkey Terrier" in German, reflecting their
+                            distinctive appearance and playful personality. They were initially bred to control pests in
+                            homes and stables, serving as effective ratters. Over time, they gained popularity as
+                            companion animals, particularly among nobles and the bourgeoisie.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fs-5 fw-medium" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                          aria-controls="flush-collapseTwo">
+                          Size
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body pt-0">
+                          <p class="mb-0">
+                            The Affenpinscher is a toy breed that originated in Germany, with a history dating back to
+                            the 1600s. The name "Affenpinscher" means "Monkey Terrier" in German, reflecting their
+                            distinctive appearance and playful personality. They were initially bred to control pests in
+                            homes and stables, serving as effective ratters. Over time, they gained popularity as
+                            companion animals, particularly among nobles and the bourgeoisie.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fs-5 fw-medium" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                          aria-controls="flush-collapseThree">
+                          Temperament
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body pt-0">
+                          <p class="mb-0">
+                            The Affenpinscher is a toy breed that originated in Germany, with a history dating back to
+                            the 1600s. The name "Affenpinscher" means "Monkey Terrier" in German, reflecting their
+                            distinctive appearance and playful personality. They were initially bred to control pests in
+                            homes and stables, serving as effective ratters. Over time, they gained popularity as
+                            companion animals, particularly among nobles and the bourgeoisie.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fs-5 fw-medium" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false"
+                          aria-controls="flush-collapsefour">
+                          Coat
+                        </button>
+                      </h2>
+                      <div id="flush-collapsefour" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body pt-0">
+                          <p class="mb-0">
+                            The Affenpinscher is a toy breed that originated in Germany, with a history dating back to
+                            the 1600s. The name "Affenpinscher" means "Monkey Terrier" in German, reflecting their
+                            distinctive appearance and playful personality. They were initially bred to control pests in
+                            homes and stables, serving as effective ratters. Over time, they gained popularity as
+                            companion animals, particularly among nobles and the bourgeoisie.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fs-5 fw-medium" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#flush-collapsefive" aria-expanded="false"
+                          aria-controls="flush-collapsefive">
+                          Lifestyle
+                        </button>
+                      </h2>
+                      <div id="flush-collapsefive" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body pt-0">
+                          <p class="mb-0">
+                            The Affenpinscher is a toy breed that originated in Germany, with a history dating back to
+                            the 1600s. The name "Affenpinscher" means "Monkey Terrier" in German, reflecting their
+                            distinctive appearance and playful personality. They were initially bred to control pests in
+                            homes and stables, serving as effective ratters. Over time, they gained popularity as
+                            companion animals, particularly among nobles and the bourgeoisie.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fs-5 fw-medium" type="button"
+                          data-bs-toggle="collapse" data-bs-target="#flush-collapsesix" aria-expanded="false"
+                          aria-controls="flush-collapsesix">
+                          Activities
+                        </button>
+                      </h2>
+                      <div id="flush-collapsesix" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body pt-0">
+                          <p class="mb-0">
+                            The Affenpinscher is a toy breed that originated in Germany, with a history dating back to
+                            the 1600s. The name "Affenpinscher" means "Monkey Terrier" in German, reflecting their
+                            distinctive appearance and playful personality. They were initially bred to control pests in
+                            homes and stables, serving as effective ratters. Over time, they gained popularity as
+                            companion animals, particularly among nobles and the bourgeoisie.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!------------------------------------>
+  <!----------- Footer Start ----------->
+  <!------------------------------------>
+  <footer class="footer bg-secondary">
+    <div class="container">
+      <div class="footer-wrapper pt-7 pt-md-9 pt-lg-10 pb-md-5 pb-lg-5">
+        <div class="row">
+          <div class="col-md-4 col-lg-2 mb-7 pb-1 pb-lg-0 mb-lg-0">
+            <div class="footer-logo">
+              <a href="index.html">
+                <img src="../assets/images/logos/logo.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-7 pb-1 pb-lg-0 mb-lg-0 ps-lg-5">
+            <h6 class="fw-semibold font-work-sans mb-6 text-white">Find A Puppy</h6>
+            <ul class="list-unstyled footer-memu mb-0">
+              <li class="mb-6">
+                <a href="#" class="fs-3 d-block fw-normal">View All Puppies</a>
+              </li>
+              <li>
+                <a href="#" class="fs-3 d-block fw-normal">View All Characteristics</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-7 pb-1 pb-lg-0 mb-lg-0">
+            <h6 class="fw-semibold font-work-sans mb-6 text-white">Customers</h6>
+            <ul class="list-unstyled footer-memu mb-0">
+              <li class="mb-6">
+                <a href="#" class="fs-3 d-block fw-normal">Support</a>
+              </li>
+              <li>
+                <a href="#" class="fs-3 d-block fw-normal">Breeder Login</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-7 pb-1 pb-lg-0 mb-lg-0">
+            <h6 class="fw-semibold font-work-sans mb-6 text-white">About urpuppy</h6>
+            <ul class="list-unstyled footer-memu mb-0">
+              <li class="mb-6">
+                <a href="#" class="fs-3 d-block fw-normal">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="fs-3 d-block fw-normal">Contact Us</a>
+              </li>
+              <li>
+                <a href="#" class="fs-3 d-block fw-normal">Dog Registration</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-7 pb-1 pb-lg-0 mb-lg-0">
+            <h6 class="fw-semibold font-work-sans mb-6 text-white">Other</h6>
+            <ul class="list-unstyled footer-memu mb-0">
+              <li class="mb-6">
+                <a href="#" class="fs-3 d-block fw-normal">Privacy Policy</a>
+              </li>
+              <li class="mb-6">
+                <a href="#" class="fs-3 d-block fw-normal">Terms of Use</a>
+              </li>
+              <li>
+                <a href="#" class="fs-3 d-block fw-normal">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-2 mb-7 pb-1 pb-lg-0 mb-lg-0">
+            <h6 class="fw-semibold font-work-sans mb-6 text-white">Socials</h6>
+            <ul class="list-unstyled d-flex align-items-center gap-6 social-icon mb-0">
+              <li>
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="Twitter"
+                  class="bg-white bg-opacity-10 d-flex align-items-center justify-content-center round-40 rounded-circle">
+                  <img src="../assets/images/svgs/icon-twitter.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="Facebook"
+                  class="bg-white bg-opacity-10 d-flex align-items-center justify-content-center round-40 rounded-circle">
+                  <img src="../assets/images/svgs/icon-facebook.svg" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#" data-bs-toggle="tooltip" data-bs-title="Instagram"
+                  class="bg-white bg-opacity-10 d-flex align-items-center justify-content-center round-40 rounded-circle">
+                  <img src="../assets/images/svgs/icon-instagram.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="border-top border-white border-opacity-10 py-3 d-md-flex align-items-center justify-content-between">
+        <p class="mb-md-0 text-white fw-normal opacity-50">© 2024 urpuppy. All rights reserved.</p>
+        <p class="mb-0 text-white fw-normal opacity-50 d-flex align-items-center gap-2"><img
+            src="../assets/images/svgs/icon-mail.svg" alt=""> support@urpuppy.com</p>
+      </div>
+    </div>
+  </footer>
+  <!------------------------------------>
+  <!----------- Footer End ----------->
+  <!------------------------------------>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close d-flex justify-content-end ms-auto mb-2" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/wJkl3P5HnZw?si=n4EJ7JztrSZ3gWsc"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -35,7 +407,6 @@
   <script src="../assets/libs/aos/dist/aos.js"></script>
   <script src="../assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
   <script src="../dist/js/custom.js"></script>
-  </script>
 </body>
 
 </html>
