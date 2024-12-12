@@ -238,4 +238,12 @@ $(function () {
 		}
 	})
 
+
+	const select = document.getElementsByClassName('mySelect');
+    $(select).click(function () {
+      this.addEventListener('change', function () {
+        this.style.color = '#08314e';
+      });
+    });
+
 });

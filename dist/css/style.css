@@ -2539,7 +2539,7 @@ progress {
   padding: 8px 0;
   margin-bottom: 0;
   line-height: 1.5;
-  color: var(--bs-body-color);
+  color: #08314E;
   background-color: transparent;
   border: solid transparent;
   border-width: var(--bs-border-width) 0;
@@ -16813,6 +16813,7 @@ input[type=number] {
 .grid-filter-mobile input:focus,
 .grid-filter-mobile select:focus {
   background-color: #fff;
+  border-radius: 0;
 }
 
 .sex .form-select,
