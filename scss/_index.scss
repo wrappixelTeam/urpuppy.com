@@ -483,6 +483,23 @@ input[type="number"] {
     }
 }
 
+.post-reviews{
+    textarea{
+        border-radius: 4px;
+        padding: 16px;
+        color: rgba(8, 49, 78, 0.6);
+        background: rgba(8, 49, 78, 0.05);
+        border: 1px solid rgba(8, 49, 78, 0.1);
+    }
+    ::placeholder{
+        color: rgba(8, 49, 78, 0.6);
+    }
+}
+
+
+
+
+
 
 // --------------------------------
 // ----- Information Css ------

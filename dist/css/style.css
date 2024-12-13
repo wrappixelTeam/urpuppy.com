@@ -17138,6 +17138,17 @@ input[type=number] {
   transform: scale(1.2);
 }
 
+.post-reviews textarea {
+  border-radius: 4px;
+  padding: 16px;
+  color: rgba(8, 49, 78, 0.6);
+  background: rgba(8, 49, 78, 0.05);
+  border: 1px solid rgba(8, 49, 78, 0.1);
+}
+.post-reviews ::placeholder {
+  color: rgba(8, 49, 78, 0.6);
+}
+
 .information-header {
   position: relative;
   background-color: rgb(4, 23, 37);
