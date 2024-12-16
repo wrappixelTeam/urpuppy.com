@@ -2753,6 +2753,10 @@ textarea.form-control-lg {
   opacity: 0.5;
 }
 
+.form-check-label {
+  color: #08314E;
+}
+
 .form-switch {
   padding-left: 2.5em;
 }
@@ -16813,7 +16817,9 @@ input[type=number] {
 }
 
 .grid-filter input,
-.grid-filter select, .grid-filter input:focus, .grid-filter select:focus,
+.grid-filter select,
+.grid-filter input:focus,
+.grid-filter select:focus,
 .grid-filter-mobile input,
 .grid-filter-mobile select,
 .grid-filter-mobile input:focus,
@@ -17208,6 +17214,19 @@ input[type=number] {
   background-image: url(../../assets/images/shape/login-shape-2.png);
 }
 
+.upload-details .dropzone {
+  min-height: 80px;
+  border: 1px dashed #E88325;
+  border-radius: 8px;
+}
+.upload-details .dropzone .dz-message {
+  margin: 16px 0;
+}
+.upload-details .dropzone .dz-message .dz-button {
+  color: #08314E;
+  font-weight: 500;
+}
+
 @media (max-width: 991.98px) {
   .main-header {
     padding: 20px 0;
@@ -17283,6 +17302,10 @@ img {
 
 textarea {
   resize: none;
+}
+
+input[type=number] {
+  border: 1px solid rgba(8, 49, 78, 0.2);
 }
 
 .round-20 {

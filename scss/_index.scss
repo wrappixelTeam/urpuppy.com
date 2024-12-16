@@ -64,7 +64,9 @@ input[type="number"] {
 .grid-filter-mobile {
 
     input,
-    select, input:focus, select:focus {
+    select,
+    input:focus,
+    select:focus {
         background-color: $white;
         border-radius: 0;
     }
@@ -483,15 +485,16 @@ input[type="number"] {
     }
 }
 
-.post-reviews{
-    textarea{
+.post-reviews {
+    textarea {
         border-radius: 4px;
         padding: 16px;
         color: rgba(8, 49, 78, 0.6);
         background: rgba(8, 49, 78, 0.05);
         border: 1px solid rgba(8, 49, 78, 0.1);
     }
-    ::placeholder{
+
+    ::placeholder {
         color: rgba(8, 49, 78, 0.6);
     }
 }
@@ -506,26 +509,26 @@ input[type="number"] {
 // --------------------------------
 
 
-.information-header{
+.information-header {
     position: relative;
     background-color: rgba(4, 23, 37, 1);
 }
 
-.breadcrumb-item + .breadcrumb-item::before{
+.breadcrumb-item+.breadcrumb-item::before {
     line-height: normal;
 }
 
-.accordion{
-    .accordion-item{
+.accordion {
+    .accordion-item {
         margin-bottom: 20px;
         overflow: hidden;
         border-radius: 12px;
         border: 1px solid rgba(8, 49, 78, 0.1) !important;
 
-        &:last-child{
+        &:last-child {
             margin-bottom: 0;
         }
-        
+
     }
 }
 
@@ -535,25 +538,25 @@ input[type="number"] {
 // ----- Login Css ------
 // --------------------------------
 
-.login-bg{
+.login-bg {
     background-color: rgba(0, 122, 255, 0.05);
 
-    .card{
+    .card {
         max-width: 1140px;
         margin: 0 auto;
         width: 100%;
         filter: drop-shadow(0px 8px 24px rgba(149, 157, 165, 0.2));
 
-        .login-info{
+        .login-info {
             max-width: 392px;
             margin: 0 auto;
         }
 
-        .login-right-bg{
+        .login-right-bg {
             position: relative;
             background: linear-gradient(212.95deg, #75B7FF -22.49%, #298FFF 96.67%);
 
-            &::before{
+            &::before {
                 content: '';
                 position: absolute;
                 left: 0;
@@ -566,19 +569,42 @@ input[type="number"] {
                 background-position: right;
             }
 
-            .login-right-card{
+            .login-right-card {
                 max-width: 360px;
                 width: 100%;
             }
         }
 
-        .signup-right-bg{
+        .signup-right-bg {
             background: linear-gradient(212.95deg, #92E2A6 -22.49%, #55D375 96.67%);
 
-            &::before{
+            &::before {
                 background-image: url(../../assets/images/shape/login-shape-2.png);
             }
         }
     }
 }
 
+
+
+// --------------------------------
+// ----- List Ur Puppy Css ------
+// --------------------------------
+
+.upload-details {
+
+    .dropzone {
+        min-height: 80px;
+        border: 1px dashed $primary;
+        border-radius: 8px;
+
+        .dz-message {
+            margin: 16px 0;
+
+            .dz-button {
+                color: $dark;
+                font-weight: 500;
+            }
+        }
+    }
+}
