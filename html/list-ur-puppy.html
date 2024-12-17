@@ -25,7 +25,7 @@
           <a class="navbar-brand py-0 me-0" href="index.html"><img src="../assets/images/logos/logo.svg" alt="" /></a>
         </div>
         <div class="d-xl-none d-flex align-items-center gap-3">
-          <a class="position-relative me-1 d-xl-none" href="#">
+          <a class="position-relative me-1 d-xl-none" href="my-favourite-puppies.html">
             <img src="../assets/images/svgs/icon-heart-white.svg" alt="">
             <span class="position-absolute fs-1 p-1 top-0 start-100 translate-middle badge rounded-pill bg-danger">
               9+
@@ -293,8 +293,7 @@
                       </label>
                       <select class="form-select shadow-none" aria-label="Default select example">
                         <option selected="">Male</option>
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
+                        <option value="1">Female</option>
                       </select>
                     </div>
                   </div>
@@ -326,7 +325,7 @@
                 <div class="email-repeater border-top pt-4">
                   <h6 class="fs-5 mb-3 pb-1">Add Siblings</h6>
                   <div data-repeater-list="repeater-group">
-                    <div data-repeater-item class="row align-items-center">
+                    <div data-repeater-item class="row align-items-end">
                       <div class="col-lg-4">
                         <div class="mb-4">
                           <label for="PuppyName" class="form-label">
@@ -342,7 +341,6 @@
                           </label>
                           <select class="form-select shadow-none" aria-label="Default select example">
                             <option selected="">Male</option>
-                            <option value="1">Male</option>
                             <option value="2">Female</option>
                           </select>
                         </div>
@@ -356,13 +354,13 @@
                         </div>
                       </div>
                       <div class="col-lg-1">
-                        <div class="d-flex align-items-center gap-2">
+                        <div class="d-flex align-items-center gap-2 mb-4">
                           <button type="button" data-repeater-create
-                            class="btn btn-success round-40 p-0 d-flex align-items-center justify-content-center fs-8">
+                            class="btn btn-success round-40 p-0 d-flex align-items-center justify-content-center fs-8 flex-shrink-0">
                             +
                           </button>
                           <button data-repeater-delete
-                            class="btn btn-danger round-40 p-0 d-flex align-items-center justify-content-center fs-8"
+                            class="btn btn-danger round-40 p-0 d-flex align-items-center justify-content-center fs-8 flex-shrink-0"
                             type="button">
                             -
                           </button>
@@ -643,6 +641,7 @@
   <script src="../assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
   <script src="../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
   <script src="../assets/libs/jquery.repeater/jquery.repeater.min.js"></script>
+  <script src="../dist/js/repeater.js"></script>
   <script src="../dist/js/custom.js"></script>
 </body>
 
