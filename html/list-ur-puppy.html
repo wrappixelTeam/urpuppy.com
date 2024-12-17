@@ -130,15 +130,24 @@
                 <div class="row">
                   <div class="col-lg-4">
                     <div class="mb-4">
-                      <label for="ContactPerson" class="form-label">
-                        Contact Person <span class="text-danger">*</span>
+                      <label for="FirstName" class="form-label">
+                        First Name <span class="text-danger">*</span>
                       </label>
-                      <input type="text" name="ContactPerson" id="ContactPerson" class="form-control">
+                      <input type="text" name="FirstName" id="FirstName" class="form-control">
                     </div>
                   </div>
                   <div class="col-lg-4">
                     <div class="mb-4">
-                      <label for="exampleInputEmail1" class="form-label">Email <span class="text-danger">*</span></label>
+                      <label for="LastName" class="form-label">
+                        Last Name <span class="text-danger">*</span>
+                      </label>
+                      <input type="text" name="LastName" id="LastName" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mb-4">
+                      <label for="exampleInputEmail1" class="form-label">Email <span
+                          class="text-danger">*</span></label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                   </div>
@@ -158,7 +167,7 @@
                       <input type="text" name="Website" id="Website" class="form-control">
                     </div>
                   </div>
-                  <div class="col-lg-8">
+                  <div class="col-lg-4">
                     <div class="mb-4">
                       <label for="SocialLinks" class="form-label">
                         Social Links (Optional)
@@ -171,7 +180,8 @@
                               data-bs-toggle="dropdown" aria-expanded="false">
                               <img src="../assets/images/svgs/icon-facebook-dark.svg" alt="">
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-end social-icon px-6 shadow-sm" style="min-width: max-content;">
+                            <ul class="dropdown-menu dropdown-menu-end social-icon px-6 shadow-sm"
+                              style="min-width: max-content;">
                               <input type="text" name="ContactPerson" id="ContactPerson" class="form-control">
                             </ul>
                           </div>
@@ -183,7 +193,8 @@
                               data-bs-toggle="dropdown" aria-expanded="false">
                               <img src="../assets/images/svgs/icon-twitter-dark.svg" alt="">
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-end social-icon px-6 shadow-sm" style="min-width: max-content;">
+                            <ul class="dropdown-menu dropdown-menu-end social-icon px-6 shadow-sm"
+                              style="min-width: max-content;">
                               <input type="text" name="ContactPerson" id="ContactPerson" class="form-control">
                             </ul>
                           </div>
@@ -195,7 +206,8 @@
                               data-bs-toggle="dropdown" aria-expanded="false">
                               <img src="../assets/images/svgs/icon-tiktok-dark.svg" alt="">
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-end social-icon px-6 shadow-sm" style="min-width: max-content;">
+                            <ul class="dropdown-menu dropdown-menu-end social-icon px-6 shadow-sm"
+                              style="min-width: max-content;">
                               <input type="text" name="ContactPerson" id="ContactPerson" class="form-control">
                             </ul>
                           </div>
@@ -207,7 +219,8 @@
                               data-bs-toggle="dropdown" aria-expanded="false">
                               <img src="../assets/images/svgs/icon-instagram-dark.svg" alt="">
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-end social-icon px-6 shadow-sm" style="min-width: max-content;">
+                            <ul class="dropdown-menu dropdown-menu-end social-icon px-6 shadow-sm"
+                              style="min-width: max-content;">
                               <input type="text" name="ContactPerson" id="ContactPerson" class="form-control">
                             </ul>
                           </div>
@@ -275,10 +288,14 @@
                   </div>
                   <div class="col-lg-6">
                     <div class="mb-4">
-                      <label for="Siblings" class="form-label">
-                        Siblings/Other Listings <span class="text-danger">*</span>
+                      <label for="Gender" class="form-label">
+                        Gender <span class="text-danger">*</span>
                       </label>
-                      <input type="text" name="Siblings" id="Siblings" class="form-control">
+                      <select class="form-select shadow-none" aria-label="Default select example">
+                        <option selected="">Male</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                      </select>
                     </div>
                   </div>
                   <div class="col-12">
@@ -303,6 +320,54 @@
                         Date of Birth <span class="text-danger">*</span>
                       </label>
                       <input type="text" name="DateBirth" id="DateBirth" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="email-repeater border-top pt-4">
+                  <h6 class="fs-5 mb-3 pb-1">Add Siblings</h6>
+                  <div data-repeater-list="repeater-group">
+                    <div data-repeater-item class="row align-items-center">
+                      <div class="col-lg-4">
+                        <div class="mb-4">
+                          <label for="PuppyName" class="form-label">
+                            Puppy Name <span class="text-danger">*</span>
+                          </label>
+                          <input type="text" name="PuppyName" id="PuppyName" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="mb-4">
+                          <label for="Gender" class="form-label">
+                            Gender <span class="text-danger">*</span>
+                          </label>
+                          <select class="form-select shadow-none" aria-label="Default select example">
+                            <option selected="">Male</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="mb-4">
+                          <label for="DateBirth" class="form-label">
+                            Date of Birth <span class="text-danger">*</span>
+                          </label>
+                          <input type="text" name="DateBirth" id="DateBirth" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-lg-1">
+                        <div class="d-flex align-items-center gap-2">
+                          <button type="button" data-repeater-create
+                            class="btn btn-success round-40 p-0 d-flex align-items-center justify-content-center fs-8">
+                            +
+                          </button>
+                          <button data-repeater-delete
+                            class="btn btn-danger round-40 p-0 d-flex align-items-center justify-content-center fs-8"
+                            type="button">
+                            -
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -474,10 +539,10 @@
             <h6 class="fw-semibold font-work-sans mb-6 text-white">Find A Puppy</h6>
             <ul class="list-unstyled footer-memu mb-0">
               <li class="mb-6">
-                <a href="#" class="fs-3 d-block fw-normal">View All Puppies</a>
+                <a href="puppies-for-sale.html" class="fs-3 d-block fw-normal">View All Puppies</a>
               </li>
               <li>
-                <a href="#" class="fs-3 d-block fw-normal">View All Characteristics</a>
+                <a href="breeds.html" class="fs-3 d-block fw-normal">View All Characteristics</a>
               </li>
             </ul>
           </div>
@@ -485,7 +550,7 @@
             <h6 class="fw-semibold font-work-sans mb-6 text-white">Customers</h6>
             <ul class="list-unstyled footer-memu mb-0">
               <li class="mb-6">
-                <a href="#" class="fs-3 d-block fw-normal">Support</a>
+                <a href="mailto:support@urpuppy.com" class="fs-3 d-block fw-normal">Support</a>
               </li>
               <li>
                 <a href="breeders-registration.html" class="fs-3 d-block fw-normal">Breeder Register</a>
@@ -507,14 +572,12 @@
             <h6 class="fw-semibold font-work-sans mb-6 text-white">Other</h6>
             <ul class="list-unstyled footer-memu mb-0">
               <li class="mb-6">
-                <a href="#" class="fs-3 d-block fw-normal">Privacy Policy</a>
+                <a href="privacy-policy.html" class="fs-3 d-block fw-normal">Privacy Policy</a>
               </li>
               <li class="mb-6">
-                <a href="#" class="fs-3 d-block fw-normal">Terms of Use</a>
+                <a href="terms-conditions.html" class="fs-3 d-block fw-normal">Terms of Use</a>
               </li>
-              <li>
-                <a href="#" class="fs-3 d-block fw-normal">Sitemap</a>
-              </li>
+
             </ul>
           </div>
           <div class="col-md-4 col-lg-2 mb-7 pb-1 pb-lg-0 mb-lg-0">
@@ -545,7 +608,8 @@
       <div class="border-top border-white border-opacity-10 py-3 d-md-flex align-items-center justify-content-between">
         <p class="mb-md-0 text-white fw-normal opacity-50">© 2024 urpuppy. All rights reserved.</p>
         <p class="mb-0 text-white fw-normal opacity-50 d-flex align-items-center gap-2"><img
-            src="../assets/images/svgs/icon-mail.svg" alt=""> support@urpuppy.com</p>
+            src="../assets/images/svgs/icon-mail.svg" alt=""> <a class="text-white" href="mailto:support@urpuppy.com">
+            support@urpuppy.com</a></p>
       </div>
     </div>
   </footer>
@@ -578,6 +642,7 @@
   <script src="../assets/libs/aos/dist/aos.js"></script>
   <script src="../assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
   <script src="../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+  <script src="../assets/libs/jquery.repeater/jquery.repeater.min.js"></script>
   <script src="../dist/js/custom.js"></script>
 </body>
 
