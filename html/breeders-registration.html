@@ -128,31 +128,39 @@
             <div class="card-body">
               <div class="contact-details border-bottom mb-4">
                 <h6 class="fs-5 mb-3 pb-1">Contact Details</h6>
+                <div class="border-bottom mb-4">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="mb-4">
+                        <label for="fullname" class="form-label">
+                          Full Name <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" name="fullname" id="fullname" class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-bottom mb-4">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="mb-4">
+                        <label for="KennelName" class="form-label">
+                          Kennel Name <span class="text-danger">*</span>
+                        </label>
+                        <input type="text" name="KennelName" id="KennelName" class="form-control">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="mb-4">
+                        <label for="exampleInputEmail1" class="form-label">Email <span
+                            class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="row">
                   <div class="col-lg-6">
-                    <div class="mb-4">
-                      <label for="fullname" class="form-label">
-                        Full Name <span class="text-danger">*</span>
-                      </label>
-                      <input type="text" name="fullname" id="fullname" class="form-control">
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="mb-4">
-                      <label for="KennelName" class="form-label">
-                        Kennel Name <span class="text-danger">*</span>
-                      </label>
-                      <input type="text" name="KennelName" id="KennelName" class="form-control">
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="mb-4">
-                      <label for="exampleInputEmail1" class="form-label">Email <span
-                          class="text-danger">*</span></label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
                     <div class="mb-4">
                       <label for="Phone" class="form-label">
                         Phone <span class="text-danger">*</span>
@@ -160,7 +168,7 @@
                       <input type="text" name="Phone" id="Phone" class="form-control">
                     </div>
                   </div>
-                  <div class="col-lg-4">
+                  <div class="col-lg-6">
                     <div class="mb-4">
                       <label for="SocialLinks" class="form-label">
                         Social Links (Optional)
@@ -236,18 +244,50 @@
                   </div>
                 </div>
               </div>
-              <div class="location-details border-bottom mb-4">
+              <div class="location-details">
                 <h6 class="fs-5 mb-3 pb-1">Location Details</h6>
                 <div class="row">
                   <div class="col-lg-4">
                     <div class="mb-4">
-                      <label for="CompleteAddress" class="form-label">
-                        Complete Address <span class="text-danger">*</span>
+                      <label for="City" class="form-label">
+                        City <span class="text-danger">*</span>
                       </label>
-                      <input type="text" name="CompleteAddress" id="CompleteAddress" class="form-control">
+                      <input type="text" name="City" id="City" class="form-control" list="datalistOptions1"
+                        id="exampleDataList">
+                      <datalist id="datalistOptions1">
+                        <option value="New York">
+                        <option value="Los Angeles">
+                        <option value="Chicago">
+                        <option value="Houston">
+                        <option value="Phoenix">
+                      </datalist>
                     </div>
                   </div>
                   <div class="col-lg-4">
+                    <div class="mb-4">
+                      <label for="State" class="form-label">
+                        State <span class="text-danger">*</span>
+                      </label>
+                      <input type="text" name="State" id="State" class="form-control" list="datalistOptions2"
+                        id="exampleDataList2">
+                      <datalist id="datalistOptions2">
+                        <option value="Alaska">
+                        <option value="California">
+                        <option value="Delaware">
+                        <option value="Florida">
+                        <option value="Gregoria">
+                      </datalist>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="mb-4">
+                      <label for="ZipCode" class="form-label">
+                        Zip Code <span class="text-danger">*</span>
+                      </label>
+                      <input type="number" name="ZipCode" id="ZipCode" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
                     <div class="mb-4">
                       <label for="BreedType" class="form-label d-block">
                         Breed Type <span class="fs-1"> ( Max 4 Type ) </span> <span class="text-danger">*</span>
@@ -262,7 +302,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-lg-4">
+                  <div class="col-lg-6">
                     <div class="mb-4">
                       <label for="business" class="form-label">
                         When did you start your business? <span class="text-danger">*</span>
