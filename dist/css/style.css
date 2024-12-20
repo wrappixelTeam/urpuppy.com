@@ -17305,6 +17305,24 @@ body .select2-container--default .select2-selection--multiple .select2-selection
   font-weight: 500;
 }
 
+.contact-us {
+  background-image: url(../../assets/images/contact/contact-bg.jpg);
+}
+
+@media (max-width: 991.98px) {
+  .get-in-touch .border-end {
+    border-right: 0 !important;
+  }
+}
+
+.subscription-plans-bg {
+  background-image: url(../../assets/images/subscription-plans/subscription-plans-bg.jpg);
+}
+
+.subscription-plans-box:hover {
+  border: 1px solid #007AFF !important;
+}
+
 @media (max-width: 991.98px) {
   .main-header {
     padding: 20px 0;

@@ -708,3 +708,36 @@ body {
         }
     }
 }
+
+
+// --------------------------------
+// ----- Contact us Css ------
+// --------------------------------
+
+.contact-us{
+    background-image: url(../../assets/images/contact/contact-bg.jpg);
+}
+
+.get-in-touch{
+
+    @include media-breakpoint-down(lg){
+        .border-end{
+            border-right: 0 !important;
+        }
+    }
+}
+
+// --------------------------------
+// ----- Subscription Plan Css ------
+// --------------------------------
+
+.subscription-plans-bg{
+    background-image: url(../../assets/images/subscription-plans/subscription-plans-bg.jpg);
+}
+
+
+.subscription-plans-box{
+    &:hover{
+        border: 1px solid $info !important; 
+    }
+}
