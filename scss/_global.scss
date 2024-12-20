@@ -109,3 +109,15 @@ input[type=number] {
     background-color: rgba(255 255 255 / 20%);
   }
 }
+
+.link{
+  &:hover{
+    color: $primary !important;
+
+    svg{
+      path{
+        stroke: $primary !important;
+      }
+    }
+  }
+}

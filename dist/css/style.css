@@ -17320,7 +17320,7 @@ body .select2-container--default .select2-selection--multiple .select2-selection
 }
 
 .subscription-plans-box:hover {
-  border: 1px solid #007AFF !important;
+  border: 2px solid #007AFF !important;
 }
 
 @media (max-width: 991.98px) {
@@ -17459,4 +17459,11 @@ input[type=number] {
 
 .btn-outline-white:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.link:hover {
+  color: #E88325 !important;
+}
+.link:hover svg path {
+  stroke: #E88325 !important;
 }
