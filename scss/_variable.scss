@@ -82,6 +82,7 @@ $font-sizes: (
   9: 32px,
   10: 40px,
   11: 72px,
+  12: 48px,
 ) !default;
 $font-size-base: 1rem !default;
 
@@ -175,7 +176,14 @@ $pagination-focus-bg:               $dark;
 $pagination-focus-box-shadow:       none;
 
 // dropdown
+$dropdown-bg:  $white;
+$dropdown-color:                    $dark;
+$dropdown-link-color:               $dark;
+$dropdown-link-active-color:        $white;
+$dropdown-link-active-bg:           $primary;
 $dropdown-border-width: 0;
+$dropdown-link-hover-color:         $dark;
+$dropdown-link-hover-bg:            $extralight;
 
 // Input
 $input-border-radius: 100px !default;

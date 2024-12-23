@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../assets/libs/aos/dist/aos.css" />
   <link rel="stylesheet" href="../assets/libs/ion-rangeslider/css/ion.rangeSlider.min.css" />
   <link rel="stylesheet" href="../assets/libs/dropzone/dist/min/dropzone.min.css" />
+  <link rel="stylesheet" href="../assets/libs/select2/dist/css/select2.min.css" />
   <link rel="stylesheet" href="../dist/css/style.css" />
 </head>
 
@@ -305,7 +306,7 @@
                       <textarea class="form-control rounded-1" id="About" rows="3" placeholder=""></textarea>
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-4">
                     <div class="mb-4">
                       <label for="PatternCoat" class="form-label">
                         Pattern/Coat <span class="text-danger">*</span>
@@ -313,7 +314,7 @@
                       <input type="text" name="PatternCoat" id="PatternCoat" class="form-control">
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-4">
                     <div class="mb-4">
                       <label for="DateBirth" class="form-label">
                         Date of Birth <span class="text-danger">*</span>
@@ -321,51 +322,23 @@
                       <input type="text" name="DateBirth" id="DateBirth" class="form-control">
                     </div>
                   </div>
-                </div>
-                <div class="email-repeater border-top pt-4">
-                  <h6 class="fs-5 mb-3 pb-1">Add Siblings</h6>
-                  <div data-repeater-list="repeater-group">
-                    <div data-repeater-item class="row align-items-end">
-                      <div class="col-lg-4">
-                        <div class="mb-4">
-                          <label for="PuppyName" class="form-label">
-                            Puppy Name <span class="text-danger">*</span>
-                          </label>
-                          <input type="text" name="PuppyName" id="PuppyName" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-lg-3">
-                        <div class="mb-4">
-                          <label for="Gender" class="form-label">
-                            Gender <span class="text-danger">*</span>
-                          </label>
-                          <select class="form-select shadow-none" aria-label="Default select example">
-                            <option selected="">Male</option>
-                            <option value="2">Female</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-lg-4">
-                        <div class="mb-4">
-                          <label for="DateBirth" class="form-label">
-                            Date of Birth <span class="text-danger">*</span>
-                          </label>
-                          <input type="text" name="DateBirth" id="DateBirth" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-lg-1">
-                        <div class="d-flex align-items-center gap-2 mb-4">
-                          <button type="button" data-repeater-create
-                            class="btn btn-success round-40 p-0 d-flex align-items-center justify-content-center fs-8 flex-shrink-0">
-                            +
-                          </button>
-                          <button data-repeater-delete
-                            class="btn btn-danger round-40 p-0 d-flex align-items-center justify-content-center fs-8 flex-shrink-0"
-                            type="button">
-                            -
-                          </button>
-                        </div>
-                      </div>
+                  <div class="col-lg-4">
+                    <div class="mb-4">
+                      <label for="SiblingsOff" class="form-label d-block">
+                        Siblings Off <span class="text-danger">*</span>
+                      </label>
+                      <select class="form-control" id="mySelect2" multiple="multiple">
+                        <option value="Option1">Max</option>
+                        <option value="Option2">Charlie</option>
+                        <option value="Option3">Lucy</option>
+                        <option value="Option4">Daisy</option>
+                        <option value="Option5">Luna</option>
+                        <option value="Option6">Bella</option>
+                        <option value="Option7">Bailey</option>
+                        <option value="Option8">Cooper</option>
+                        <option value="Option9">Buddy</option>
+                        <option value="Option9">Sadie</option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -641,8 +614,16 @@
   <script src="../assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
   <script src="../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
   <script src="../assets/libs/jquery.repeater/jquery.repeater.min.js"></script>
+  <script src="../assets/libs/select2/dist/js/select2.min.js"></script>
   <script src="../dist/js/repeater.js"></script>
   <script src="../dist/js/custom.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#mySelect2').select2({
+        
+      });
+    });
+  </script>
 </body>
 
 </html>
