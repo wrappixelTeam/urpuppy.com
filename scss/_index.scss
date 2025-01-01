@@ -741,3 +741,33 @@ body {
         border: 2px solid $info !important; 
     }
 }
+
+
+
+// --------------------------------
+// --------- Account Css ----------
+// --------------------------------
+
+.account-settings{
+    .nav-pills{
+        .nav-item{
+            .nav-link{
+                color: rgba(8, 49, 78, 0.8);
+
+                &.active{
+                    background-color: rgba(8, 49, 78, 0.1);
+                    color: $dark;
+                }
+
+                @include media-breakpoint-down(md){
+                    width: 48px !important;
+                    height: 48px !important;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

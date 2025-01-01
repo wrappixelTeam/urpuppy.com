@@ -313,6 +313,10 @@
 
     <section class="puppy-spotlight py-7 py-md-5 py-xl-9">
       <div class="container">
+        <div class="mb-8 text-end">
+          <!-- Button trigger modal -->
+          <a href="#" class="btn btn-outline-extralight border btn-white text-dark" data-bs-toggle="modal" data-bs-target="#SaveThisSearch">Save This Search</a>
+        </div>
         <div class="row mb-4 mb-lg-8">
           <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
             <div class="puppy-spotlight-item rounded-1 overflow-hidden" data-aos="fade-up" data-aos-delay="100"
@@ -1037,17 +1041,42 @@
   <!----------- Footer End ----------->
   <!------------------------------------>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Modal Save This Search -->
+  <div class="modal fade" id="SaveThisSearch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="btn-close d-flex justify-content-end ms-auto mb-2" data-bs-dismiss="modal"
-            aria-label="Close"></button>
-          <iframe width="100%" height="400" src="https://www.youtube.com/embed/wJkl3P5HnZw?si=n4EJ7JztrSZ3gWsc"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="modal-body px-4 py-8">
+          <h3 class="mb-3 text-center text-primary">Save This Search</h3>
+          <p class="text-center">Give this search a name so you remember what you were looking for. (We'll notify you when new puppies are available)</p>
+          <form action="">
+            <div>
+              <label for="SearchTitle" class="form-label">
+                Search Title
+              </label>
+              <input type="text" name="SearchTitle" id="SearchTitle" class="form-control" placeholder="January 1, 2025 at 12:22 am">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer d-flex align-items-center justify-content-between">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SearchSaved">Save Search</button>
+          <button type="button" class="btn btn-outline-extralight border btn-white text-dark" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Search Saved -->
+  <div class="modal fade" id="SearchSaved" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body px-4 py-8">
+          <img src="../assets/images/svgs/icon-check-filled-big.svg" alt="" class="d-block flex-shrink-0 mx-auto mb-2">
+          <h3 class="mb-3 text-center text-primary">Search Saved</h3>
+          <p class="text-center mb-0">You can view your saved search results in the saved searches area of your account settings.</p>
+        </div>
+        <div class="modal-footer d-flex align-items-center justify-content-between">
+          <button type="button" class="btn btn-primary">View Searches</button>
+          <button type="button" class="btn btn-outline-extralight border btn-white text-dark" data-bs-dismiss="modal">Cancel</button>
         </div>
       </div>
     </div>
