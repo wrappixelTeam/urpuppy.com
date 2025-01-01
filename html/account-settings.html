@@ -111,21 +111,29 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
-            <ul class="nav nav-pills justify-content-center flex-lg-column gap-2 mb-4 mb-lg-0" id="pills-tab" role="tablist">
+            <ul class="nav nav-pills justify-content-center flex-lg-column gap-2 mb-4 mb-lg-0" id="pills-tab"
+              role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link d-flex align-items-center gap-3 rounded-pill d-block w-100 fw-medium text-start active" id="pills-account-settings-tab" data-bs-toggle="pill"
-                  data-bs-target="#pills-account-settings" type="button" role="tab"
-                  aria-controls="pills-account-settings" aria-selected="true"><img src="../assets/images/svgs/icon-user-dark.svg" alt=""><span class="d-none d-md-block">Account Settings</span> </button>
+                <button
+                  class="nav-link d-flex align-items-center gap-3 rounded-pill d-block w-100 fw-medium text-start active"
+                  id="pills-account-settings-tab" data-bs-toggle="pill" data-bs-target="#pills-account-settings"
+                  type="button" role="tab" aria-controls="pills-account-settings" aria-selected="true"><img
+                    src="../assets/images/svgs/icon-user-dark.svg" alt="" width="20" height="20"><span
+                    class="d-none d-md-block">Account Settings</span> </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link d-flex align-items-center gap-3 rounded-pill d-block w-100 fw-medium text-start" id="pills-my-subscription-tab" data-bs-toggle="pill"
-                  data-bs-target="#pills-my-subscription" type="button" role="tab" aria-controls="pills-my-subscription"
-                  aria-selected="false"><img src="../assets/images/svgs/icon-card.svg" alt=""><span class="d-none d-md-block">My Subscription</span> </button>
+                <button class="nav-link d-flex align-items-center gap-3 rounded-pill d-block w-100 fw-medium text-start"
+                  id="pills-my-subscription-tab" data-bs-toggle="pill" data-bs-target="#pills-my-subscription"
+                  type="button" role="tab" aria-controls="pills-my-subscription" aria-selected="false"><img
+                    src="../assets/images/svgs/icon-card.svg" alt="" width="20" height="20"><span
+                    class="d-none d-md-block">My Subscription</span> </button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link d-flex align-items-center gap-3 rounded-pill d-block w-100 fw-medium text-start" id="pills-saved-search-tab" data-bs-toggle="pill"
-                  data-bs-target="#pills-saved-search" type="button" role="tab" aria-controls="pills-saved-search"
-                  aria-selected="false"><img src="../assets/images/svgs/icon-bookmarks.svg" alt=""><span class="d-none d-md-block">Saved Search</span> </button>
+                <button class="nav-link d-flex align-items-center gap-3 rounded-pill d-block w-100 fw-medium text-start"
+                  id="pills-saved-search-tab" data-bs-toggle="pill" data-bs-target="#pills-saved-search" type="button"
+                  role="tab" aria-controls="pills-saved-search" aria-selected="false"><img
+                    src="../assets/images/svgs/icon-bookmarks.svg" alt="" width="20" height="20"><span
+                    class="d-none d-md-block">Saved Search</span> </button>
               </li>
             </ul>
           </div>
@@ -139,12 +147,17 @@
                       <div class="pb-4 mb-4 border-bottom">
                         <h5 class="mb-4 fs-7">Profile Picture</h5>
                         <div class="d-md-flex align-items-center gap-4">
-                          <span class="d-block round-120 flex-shrink-0 position-relative overflow-hidden rounded-circle mb-3 mb-md-0">
-                            <img src="../assets/images/logos/account.jpg" alt="" class="object-fit-cover">
+                          <span
+                            class="d-block round-120 flex-shrink-0 position-relative overflow-hidden rounded-circle mb-3 mb-md-0">
+                            <img src="../assets/images/logos/account.jpg" id="image-preview" alt="" class="object-fit-cover">
                           </span>
                           <div class="d-sm-flex align-items-center gap-6">
-                            <a class="btn btn-primary d-block mb-2 mb-sm-0" href="#">Change Picture</a>
-                            <a class="btn btn-outline-extralight border btn-white text-dark d-block" href="#">Delete Picture</a>
+                            <div class="position-relative">
+                              <label for="file-upload" class="custom-file-label btn btn-primary">Change Picture</label>
+                              <input class="form-control change-img-preview" type="file" id="file-upload" placeholder="Change Picture">
+                            </div>
+                            <a class="btn btn-outline-extralight border btn-white text-dark d-block" href="#">Delete
+                              Picture</a>
                           </div>
                         </div>
                       </div>
@@ -156,7 +169,8 @@
                               <label for="FirstName" class="form-label">
                                 First Name
                               </label>
-                              <input type="text" name="FirstName" id="FirstName" class="form-control" placeholder="Mathew">
+                              <input type="text" name="FirstName" id="FirstName" class="form-control"
+                                placeholder="Mathew">
                             </div>
                           </div>
                           <div class="col-lg-6">
@@ -164,13 +178,15 @@
                               <label for="LastName" class="form-label">
                                 Last Name
                               </label>
-                              <input type="text" name="LastName" id="LastName" class="form-control" placeholder="Anderson">
+                              <input type="text" name="LastName" id="LastName" class="form-control"
+                                placeholder="Anderson">
                             </div>
                           </div>
                           <div class="col-12">
                             <div class="">
                               <label for="exampleInputEmail1" class="form-label">Email Address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="support@urpuppy.com">
+                              <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="support@urpuppy.com">
                             </div>
                           </div>
                         </div>
@@ -181,19 +197,22 @@
                           <div class="col-12">
                             <div class="mb-3 pb-1">
                               <label for="exampleInputPassword1" class="form-label">Current Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1" value="12345678910">
+                              <input type="password" class="form-control" id="exampleInputPassword1"
+                                value="12345678910">
                             </div>
                           </div>
                           <div class="col-12">
                             <div class="mb-3 pb-1">
                               <label for="exampleInputPassword2" class="form-label">New Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword2" value="12345678910">
+                              <input type="password" class="form-control" id="exampleInputPassword2"
+                                value="12345678910">
                             </div>
                           </div>
                           <div class="col-12">
                             <div class="">
                               <label for="exampleInputPassword3" class="form-label">Confirm Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword3" value="12345678910">
+                              <input type="password" class="form-control" id="exampleInputPassword3"
+                                value="12345678910">
                             </div>
                           </div>
                         </div>
@@ -205,7 +224,7 @@
                             <h6 class="mb-0 fs-4 font-work-sans">Delete Account</h6>
                             <p class="mb-0">Permanently delete your urpuppy.com account.</p>
                           </div>
-                          <a class="btn btn-outline-extralight border btn-white text-dark" href="#">Delete Picture</a>
+                          <a class="btn btn-outline-extralight border btn-white text-dark" href="#">Delete Account</a>
                         </div>
                       </div>
                       <div class="">
@@ -213,10 +232,12 @@
                         <div class="d-md-flex align-items-center justify-content-between gap-4">
                           <div class="mb-3 mb-md-0">
                             <h6 class="mb-0 fs-4 font-work-sans">Account Notifications</h6>
-                            <p class="mb-0">We will send you notifications to inform you of any updates and/or changes as events occur for you</p>
+                            <p class="mb-0">We will send you notifications to inform you of any updates and/or changes
+                              as events occur for you</p>
                           </div>
                           <div class="form-check form-switch">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                              checked>
                           </div>
                         </div>
                       </div>
@@ -233,15 +254,17 @@
                     <div class="pb-13 mb-13 border-bottom d-md-flex align-items-start justify-content-between">
                       <div class="mb-3 mb-md-0">
                         <div class="d-flex align-items-center gap-6 mb-3">
-                          <img src="../assets/images/subscription-plans/icon-gold-plan.png" alt="" width="48" height="48">
+                          <img src="../assets/images/subscription-plans/icon-gold-plan.png" alt="" width="48"
+                            height="48">
                           <p class="text-dark fs-5 mb-0">Gold Plan</p>
                         </div>
                         <h2 class="mb-2">$74.99 <span class="fs-5 text-muted">/90 Days</span></h2>
                         <p class="mb-0 text-dark">Next Billing Date: 30 Jan 2025</p>
                       </div>
                       <div>
-                        <a class="btn btn-primary d-block mb-6" href="#">Upgrade Plan</a>
-                        <a class="btn btn-outline-extralight border btn-white text-dark d-block" href="#">Cancel Plan</a>
+                        <a class="btn btn-primary d-block mb-6" href="subscription-plans.html">Upgrade Plan</a>
+                        <a data-bs-toggle="modal" data-bs-target="#CancelPlan"
+                          class="btn btn-outline-extralight border btn-white text-dark d-block" href="#">Cancel Plan</a>
                       </div>
                     </div>
                     <div class="features">
@@ -258,11 +281,13 @@
                         </li>
                         <li class="d-flex align-items-start gap-2">
                           <img src="../assets/images/svgs/icon-check-filled.svg" alt="" class="flex-shrink-0">
-                          <h5 class="fs-3 mb-0 font-work-sans fw-normal">Featured listing appearance to attract buyers</h5>
+                          <h5 class="fs-3 mb-0 font-work-sans fw-normal">Featured listing appearance to attract buyers
+                          </h5>
                         </li>
                         <li class="d-flex align-items-start gap-2">
                           <img src="../assets/images/svgs/icon-check-filled.svg" alt="" class="flex-shrink-0">
-                          <h5 class="fs-3 mb-0 font-work-sans fw-normal">List up to 10 puppies—ideal for growing breeders
+                          <h5 class="fs-3 mb-0 font-work-sans fw-normal">List up to 10 puppies—ideal for growing
+                            breeders
                           </h5>
                         </li>
                       </ul>
@@ -272,36 +297,40 @@
               </div>
               <div class="tab-pane fade" id="pills-saved-search" role="tabpanel"
                 aria-labelledby="pills-saved-search-tab" tabindex="0">
-                <div class="row">
-                  <div class="col-md-6 col-xxl-4">
-                    <div class="card border">
-                      <div class="card-body">
-                        <h6 class="mb-4">December 31, 2024 at 1:02 am</h6>
-                        <div class="d-flex align-items-center gap-6">
-                          <a class="btn btn-primary fs-2" href="results.html">View Search</a>
-                          <a class="btn btn-outline-extralight border btn-white text-dark fs-2" href="#">Delete</a>
+                <div class="card border">
+                  <div class="card-body pb-0">
+                    <div class="row">
+                      <div class="col-md-6 col-xxl-4">
+                        <div class="card border">
+                          <div class="card-body">
+                            <h6 class="mb-4">December 31, 2024 at 1:02 am</h6>
+                            <div class="d-flex align-items-center gap-6">
+                              <a class="btn btn-primary fs-2" href="results.html">View Search</a>
+                              <a class="btn btn-outline-extralight border btn-white text-dark fs-2" href="#">Delete</a>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xxl-4">
-                    <div class="card border">
-                      <div class="card-body">
-                        <h6 class="mb-4">December 31, 2024 at 1:02 am</h6>
-                        <div class="d-flex align-items-center gap-6">
-                          <a class="btn btn-primary fs-2" href="results.html">View Search</a>
-                          <a class="btn btn-outline-extralight border btn-white text-dark fs-2" href="#">Delete</a>
+                      <div class="col-md-6 col-xxl-4">
+                        <div class="card border">
+                          <div class="card-body">
+                            <h6 class="mb-4">December 31, 2024 at 1:02 am</h6>
+                            <div class="d-flex align-items-center gap-6">
+                              <a class="btn btn-primary fs-2" href="results.html">View Search</a>
+                              <a class="btn btn-outline-extralight border btn-white text-dark fs-2" href="#">Delete</a>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-xxl-4">
-                    <div class="card border">
-                      <div class="card-body">
-                        <h6 class="mb-4">December 31, 2024 at 1:02 am</h6>
-                        <div class="d-flex align-items-center gap-6">
-                          <a class="btn btn-primary fs-2" href="results.html">View Search</a>
-                          <a class="btn btn-outline-extralight border btn-white text-dark fs-2" href="#">Delete</a>
+                      <div class="col-md-6 col-xxl-4">
+                        <div class="card border">
+                          <div class="card-body">
+                            <h6 class="mb-4">December 31, 2024 at 1:02 am</h6>
+                            <div class="d-flex align-items-center gap-6">
+                              <a class="btn btn-primary fs-2" href="results.html">View Search</a>
+                              <a class="btn btn-outline-extralight border btn-white text-dark fs-2" href="#">Delete</a>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -412,17 +441,16 @@
   <!----------- Footer End ----------->
   <!------------------------------------>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Modal Search Saved -->
+  <div class="modal fade" id="CancelPlan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-body">
-          <button type="button" class="btn-close d-flex justify-content-end ms-auto mb-2" data-bs-dismiss="modal"
-            aria-label="Close"></button>
-          <iframe width="100%" height="400" src="https://www.youtube.com/embed/wJkl3P5HnZw?si=n4EJ7JztrSZ3gWsc"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="modal-body px-4 py-8">
+          <h3 class="mb-0 text-center text-primary">Are you sure you want to cancel the plan</h3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-extralight border btn-white text-dark"
+            data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -438,6 +466,32 @@
   <script src="../assets/libs/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
   <script src="../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
   <script src="../dist/js/custom.js"></script>
+  <script>
+
+    const fileInput = document.getElementById('file-upload');
+    const imagePreview = document.getElementById('image-preview');
+
+    // Handle file selection
+    fileInput.addEventListener('change', (event) => {
+      const file = event.target.files[0];
+
+      if (file) {
+        // Ensure the file is an image
+        if (file.type.startsWith('image/')) {
+          const reader = new FileReader();
+
+          // Load the image and set it as the preview source
+          reader.onload = (e) => {
+            imagePreview.src = e.target.result;
+          };
+
+          reader.readAsDataURL(file);
+        } else {
+          alert('Please select a valid image file.');
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>

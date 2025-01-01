@@ -714,14 +714,14 @@ body {
 // ----- Contact us Css ------
 // --------------------------------
 
-.contact-us{
+.contact-us {
     background-image: url(../../assets/images/contact/contact-bg.jpg);
 }
 
-.get-in-touch{
+.get-in-touch {
 
-    @include media-breakpoint-down(lg){
-        .border-end{
+    @include media-breakpoint-down(lg) {
+        .border-end {
             border-right: 0 !important;
         }
     }
@@ -731,14 +731,14 @@ body {
 // ----- Subscription Plan Css ------
 // --------------------------------
 
-.subscription-plans-bg{
+.subscription-plans-bg {
     background-image: url(../../assets/images/subscription-plans/subscription-plans-bg.jpg);
 }
 
 
-.subscription-plans-box{
-    &:hover{
-        border: 2px solid $info !important; 
+.subscription-plans-box {
+    &:hover {
+        border: 2px solid $info !important;
     }
 }
 
@@ -748,18 +748,18 @@ body {
 // --------- Account Css ----------
 // --------------------------------
 
-.account-settings{
-    .nav-pills{
-        .nav-item{
-            .nav-link{
+.account-settings {
+    .nav-pills {
+        .nav-item {
+            .nav-link {
                 color: rgba(8, 49, 78, 0.8);
 
-                &.active{
+                &.active {
                     background-color: rgba(8, 49, 78, 0.1);
                     color: $dark;
                 }
 
-                @include media-breakpoint-down(md){
+                @include media-breakpoint-down(md) {
                     width: 48px !important;
                     height: 48px !important;
                     display: flex;
@@ -771,3 +771,21 @@ body {
         }
     }
 }
+
+/* Hide the original file input */
+input[type="file"].change-img-preview {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.file-upload-wrapper::file-selector-button {
+    content: 'Choose File';
+    display: inline-block;
+    background-color: $primary;
+    color: $white;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
